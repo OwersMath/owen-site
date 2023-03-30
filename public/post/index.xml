@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Owen&#39;s Math Portal</title>
+    <link>https://hugotex.vercel.app/post/</link>
+    <description>Recent content in Posts on Owen&#39;s Math Portal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hugotex.vercel.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basel Problem</title>
+      <link>https://hugotex.vercel.app/post/basel-problem/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugotex.vercel.app/post/basel-problem/</guid>
+      <description>The Basel Problem, named after Leonard Euler&amp;rsquo;s hometown of Basel, Switzerland, is the solution to the infinite series \(\sum_{n=1}^{\infty} \frac{\pi^2}{6}\)Euler was the first to publish his solution one year after having solved this problem in 1734. Since Euler&amp;rsquo;s solution, many alternative proofs have been offered, using complex analysis, symmetric polynomials, and so on. These alternative proofs are more rigorous than Euler&amp;rsquo;s liberal use of infinite polyomial tails, but Euler&amp;rsquo;s solution is perhaps the most elegant.</description>
+    </item>
+    
+  </channel>
+</rss>
