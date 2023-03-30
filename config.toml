@@ -1,4 +1,4 @@
-baseURL = "https://hugotex.vercel.app/"
+baseURL = "https://drummond.nyc/"
 title = "Owen's Math Portal"
 theme = "hugotex"
 paginate = 3

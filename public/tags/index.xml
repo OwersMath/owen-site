@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Owen&#39;s Math Portal</title>
-    <link>https://hugotex.vercel.app/tags/</link>
+    <link>https://drummond.nyc/tags/</link>
     <description>Recent content in Tags on Owen&#39;s Math Portal</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://hugotex.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://drummond.nyc/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>index</title>
-      <link>https://hugotex.vercel.app/tags/index/</link>
+      <link>https://drummond.nyc/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hugotex.vercel.app/tags/index/</guid>
+      <guid>https://drummond.nyc/tags/index/</guid>
       <description></description>
     </item>
     
