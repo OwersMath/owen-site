@@ -19,11 +19,10 @@
     <item>
       <title>About</title>
       <link>https://drummond.nyc/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/about/</guid>
-      <description>Hello H2 Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:</description>
+      <description>I am student in mathematics currently studying at the Courant Institute at NYU. My interests include real analysis, functional analysis, differential geometry, and the philosphy of mathematics. I have completed a Bachelor of Arts in Mathematics at NYU. I am also interested in analytic philosophy and Orthodox Christian Theology.</description>
     </item>
     
   </channel>
