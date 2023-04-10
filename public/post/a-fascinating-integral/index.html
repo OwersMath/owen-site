@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8" />
+
+  <title>Basel Problem - Owen&#39;s Math Portal</title>
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="https://drummond.nyc/css/latex.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/main.css" />
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta name="generator" content="Hugo 0.111.3"><body>
+
+
+
+
+
+
+<header>
+  <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+    </ul>
+  </div>
+</nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="post-heading">
+        
+          <h1>Basel Problem</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+<div id="content">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      <div class="postmeta">
+        <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>Apr 10, 2023
+  
+</span>
+      </div>
+      <br>
+      
+    <p>We will evalute the integral
+
+\(\int_0^1 \frac{ln(x)}{1+x} dx \)
+
+using Taylor Series expansion and switching the order of integration and summation.</p>
+<p>Firstly, we notice that
+$$
+\frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n
+$$</p>
+<p>by taylor series expansion. This series coverges for
+
+\(x \in (0,1)\)
+</p>
+<p>so we can substitute this into the integral:</p>
+<p>$$
+\int_0^1 \frac{ln(x)}{1+x} dx = \int_0^1 ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx
+$$</p>
+<p>Further, by changing the order of integration and summation, we have
+$$
+\int_0^1 ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n ln(x) dx
+$$</p>
+<p>Next, we evaluate the integral
+
+\(\int_0^1 x^n ln(x) dx\)
+
+, which, by integration by parts with
+
+\(u=ln(x)\)
+
+and
+
+\(v=x^n+1\)
+,
+we have that
+$$
+\int_0^1 x^n ln(x) dx = \frac {ln(x)x^(n+1)}{n+1}\Big|<em>0^1 - \int_0^1 \frac{x^n}{n+1} dx = -\frac{x^{n+1}}{(n+1)^2}\Big|<em>0^1 = -\frac{1}{(n+1)^2}
+$$
+From this, we now have that
+$$
+\sum</em>{n=0}^{\infty} (-1)^n \int_0^1 x^n ln(x) dx = \sum</em>{n=0}^{\infty} (-1)^n (-\frac{1}{(n+1)^2}) = \sum_{n=0}^{\infty} (\frac{(-1)^{n+1}}{(n+1)^2}) = \sum_{n=1}^{\infty} (\frac{(-1)^{n}}{(n)^2}) = -\frac{\pi^2}{12}
+$$
+Thus, we have that
+$$
+\int_0^1 \frac{ln(x)}{1+x} dx = -\frac{\pi^2}{12}
+$$</p>
+
+
+
+      
+    </article>
+    
+  </div>
+
+        </div><footer>
+  <div class="container">
+    <p class="credits copyright">
+      <p class="credits theme-by">
+        Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;/&nbsp;Theme&nbsp;<a href="https://github.com/kaisugi/HugoTeX">HugoTeX</a>
+        <br>
+        <a href="https://drummond.nyc/about">Owen Drummond</a>
+        &copy;
+        2023
+      </p>
+  </div>
+</footer></body>
+</html>
