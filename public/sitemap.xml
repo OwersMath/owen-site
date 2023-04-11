@@ -11,7 +11,13 @@
     <loc>https://drummond.nyc/about/</loc>
     <lastmod>2023-04-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://drummond.nyc/tags/calculus/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://drummond.nyc/post/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://drummond.nyc/tags/</loc>
     <lastmod>2023-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://drummond.nyc/post/basel-problem/</loc>
@@ -22,7 +28,5 @@
     <loc>https://drummond.nyc/tags/index/</loc>
   </url><url>
     <loc>https://drummond.nyc/series/</loc>
-  </url><url>
-    <loc>https://drummond.nyc/tags/</loc>
   </url>
 </urlset>

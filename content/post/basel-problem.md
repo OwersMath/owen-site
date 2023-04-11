@@ -131,16 +131,17 @@ Since T is the same polynomial tail for both expressions, we can subtract by T o
 $$
     x^3\sum_{n=1}^{\infty} \frac{1}{n^2\pi^2}=\frac{x^3}{6}
 $$
-Dividing by 
+Dividing by
 {{< math.inline >}}
-x^3
-{{</ math.inline >}}, we have
+\(x^3\)
+{{</ math.inline >}}
+, we have
 $$
     \sum_{n=1}^{\infty} \frac{1}{n^2\pi^2}=\frac{1}{6}
 $$
 Finally, multiplying by 
 {{< math.inline >}}
-\pi^2
+\(\pi^2\)
 {{</ math.inline >}}
 on both sides yields
 $$

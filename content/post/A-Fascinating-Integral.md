@@ -4,6 +4,7 @@ title: A Fascinating Integral
 date: 2023-04-10
 description: A fascinating integral involving the natural logarithm
 math: true
+tags: ["Calculus"]
 ---
 We will evalute the integral
 {{< math.inline >}}
@@ -43,15 +44,18 @@ Next, we evaluate the integral
 and 
 {{< math.inline >}}
 \(v=x^n+1\)
-{{</ math.inline >}},
-we have that 
+{{</ math.inline >}}
+, we have that
+
 $$
 \int_0^1 x^n ln(x) dx = \frac {ln(x)x^(n+1)}{n+1}\Big|_0^1 - \int_0^1 \frac{x^n}{n+1} dx = -\frac{x^{n+1}}{(n+1)^2}\Big|_0^1 = -\frac{1}{(n+1)^2}
 $$
+
 From this, we now have that
 $$
 \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n ln(x) dx = \sum_{n=0}^{\infty} (-1)^n (-\frac{1}{(n+1)^2}) = \sum_{n=0}^{\infty} (\frac{(-1)^{n+1}}{(n+1)^2}) = \sum_{n=1}^{\infty} (\frac{(-1)^{n}}{(n)^2}) = -\frac{\pi^2}{12}
 $$
+
 Thus, we have that 
 $$
 \int_0^1 \frac{ln(x)}{1+x} dx = -\frac{\pi^2}{12}
