@@ -1,6 +1,6 @@
 ---
 author: Owen Drummond
-title: Basel Problem
+title: A Fascinating Integral
 date: 2023-04-10
 description: A fascinating integral involving the natural logarithm
 math: true
