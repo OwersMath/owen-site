@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Owen&#39;s Math Portal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drummond.nyc/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drummond.nyc/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Fascinating Integral</title>
+      <link>https://drummond.nyc/post/a-fascinating-integral/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://drummond.nyc/post/a-fascinating-integral/</guid>
+      <description>We will evalute the integral \(\int_0^1 \frac{ln(x)}{1+x} dx \)using Taylor Series expansion and switching the order of integration and summation.
+Firstly, we notice that $$ \frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n $$
+by taylor series expansion. This series coverges for \(x \in (0,1)\)so we can substitute this into the integral:
+$$ \int_0^1 \frac{ln(x)}{1+x} dx = \int_0^1 ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx $$
+Further, by changing the order of integration and summation, we have $$ \int_0^1 ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n ln(x) dx $$</description>
+    </item>
+    
     <item>
       <title>Basel Problem</title>
       <link>https://drummond.nyc/post/basel-problem/</link>
