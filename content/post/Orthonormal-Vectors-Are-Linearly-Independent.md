@@ -47,9 +47,11 @@ on the right hand side using inner products, we will deduce that
 \(r_2=r_3=...=r_m=0\)
 {{</ math.inline >}}
 . Thus, since 
-{{< math.inline >}}
+
+$$
 \(r_1v_1+r_2v_2+...+r_mv_m \iff r_1=r_2=...=r_m=0\)
-{{</ math.inline >}}
+$$
+
  , we conclude that 
 {{< math.inline >}}
 \((v_1,v_2,...,v_m)\)
