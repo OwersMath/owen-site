@@ -4,6 +4,7 @@ title: Orthonormal Vectors are Linearly Independent
 date: 2023-04-13
 description: Proof that any set of orthonormals in a vector space are linearly independent
 math: true
+tags: ["Geometry"]
 ---
 
 For a set of orthonormal vectors 
