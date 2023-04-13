@@ -29,7 +29,7 @@ are linearly independent, then we must show that
 {{</ math.inline >}}. If we take the inner product on both sides of the equation , we have that 
 
 $$
-\(<r_1v_1+r_2v_2+...+r_mv_m, v_1> = <0,v_1>\)
+<r_1v_1+r_2v_2+...+r_mv_m, v_1> = <0,v_1>
 $$
 
 Using the properties of inner products, we have that 
