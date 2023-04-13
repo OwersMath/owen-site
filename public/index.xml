@@ -6,7 +6,16 @@
     <description>Recent content on Owen&#39;s Math Portal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drummond.nyc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drummond.nyc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Orthonormal Vectors are Linearly Independent</title>
+      <link>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</guid>
+      <description>For a set of orthonormal vectors \((v_1,v_2,...,v_m)\)in \(\Vm\), and set of constants \(r_1,r_2,...r_m \in R\), if we consider the equation \(r_1v_1+r_2v_2+...+r_mv_m=0\)with the objective of demonstrating that the vectors in \((v_1,v_2,...,v_m)\)are linearly independent, then we must show that \(r_1=r_2=..r_m=0\). If we take the inner product on both sides of the equation , we have that \( = &lt;0,v_1&gt;\). Using the properties of inner products, we have that \(r_1 +r_2 .</description>
+    </item>
+    
     <item>
       <title>A Fascinating Integral</title>
       <link>https://drummond.nyc/post/a-fascinating-integral/</link>
