@@ -11,7 +11,7 @@ The Gaussian Integral is given by
 $$
 \int_{-\infty}^{\infty} e^{-x^2} dx
 $$
-This is a beautiful integral with many important applications to probability and statistic, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define
+This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define
 {{< math.inline >}}
 \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\)
 {{</ math.inline >}} 
@@ -76,5 +76,5 @@ $$
 we have that 
 
 $$
-I=\sqrt(\pi) \implies \int_{-\infty}^{\infty} e^{-x^2} dx
+I=\sqrt{\pi} \implies \int_{-\infty}^{\infty} e^{-x^2} dx
 $$
