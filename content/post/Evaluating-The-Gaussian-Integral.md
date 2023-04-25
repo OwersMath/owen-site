@@ -76,5 +76,5 @@ $$
 we have that 
 
 $$
-I=\sqrt{\pi} \implies \int_{-\infty}^{\infty} e^{-x^2} dx
+I=\sqrt{\pi} \implies \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
 $$
