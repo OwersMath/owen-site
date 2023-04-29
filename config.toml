@@ -25,3 +25,7 @@ footnoteReturnLinkContents = "^"
 
 [Params]
   darkmode = false
+  twittercard = true
+  opengraph = true
+  description = "Owen Drummond's mathematics portal."
+  images = ['portrait.jpg']

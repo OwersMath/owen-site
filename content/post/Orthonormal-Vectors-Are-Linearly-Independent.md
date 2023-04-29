@@ -50,7 +50,7 @@ on the right hand side using inner products, we will deduce that
 . Thus, since 
 
 $$
-\(r_1v_1+r_2v_2+...+r_mv_m \iff r_1=r_2=...=r_m=0\)
+r_1v_1+r_2v_2+...+r_mv_m \iff r_1=r_2=...=r_m=0
 $$
 
  , we conclude that 
