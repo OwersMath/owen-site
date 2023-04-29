@@ -29,3 +29,4 @@ footnoteReturnLinkContents = "^"
   opengraph = true
   description = "Owen Drummond's mathematics portal."
   images = ['portrait.jpg']
+  favicon = "favicon.jpg"
