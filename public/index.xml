@@ -13,7 +13,9 @@
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/post/first-fundamental-form/</guid>
-      <description>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by \(u=u(t)\)and \(v=v(t)\)which lies on a surface \(X\)parametrized by \(X=X(u,v)\)we have that $$ ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \dot{u} + X_v \dot{v}}) \dot (X_u \dot{u} + X_v \dot{v}})}dt $$ Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have $$ E=X_u \dot X_u, F=X_u \dot X_v, G=X_v \dot X_v $$ and moreover, $$ \sqrt{(X_u \dot{u} + X_v \dot{v}}) \dot (X_u \dot{u} + X_v \dot{v}})} = \sqrt{Edu^2 + 2F du dv + Gdv^2} $$ by direct computation.</description>
+      <description>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by \(u=u(t)\)and \(v=v(t)\)which lies on a surface \(X\)parametrized by \(X=X(u,v)\)we have that
+$$ ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \dot{u} + X_v \dot{v}}) \dot (X_u \dot{u} + X_v \dot{v}})}dt $$
+Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</description>
     </item>
     
     <item>
