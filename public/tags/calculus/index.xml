@@ -13,7 +13,7 @@
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/post/evaluating-the-gaussian-integral/</guid>
-      <description>The Gaussian Integral is given by $$ \int_{-\infty}^{\infty} e^{-x^2} dx $$ This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\)we have that $$ I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx $$ From here, we will preform a change into polar coordinates, with \((x,y) \rightarrow (t, \theta)\)and \(x=r\cos\theta\), \(y=r\sin\theta\).</description>
+      <description>The Gaussian Integral is given by $$ \int_{-\infty}^{\infty} e^{-x^2} dx $$ This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\) we have that $$ I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx $$ From here, we will preform a change into polar coordinates, with \((x,y) \rightarrow (t, \theta)\) and \(x=r\cos\theta\) , \(y=r\sin\theta\) .</description>
     </item>
     
     <item>
@@ -22,9 +22,9 @@
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/post/a-fascinating-integral/</guid>
-      <description>We will evalute the integral \(\int_0^1 \frac{\ln(x)}{1+x} dx \)using Taylor Series expansion and switching the order of integration and summation.
+      <description>We will evalute the integral \(\int_0^1 \frac{\ln(x)}{1+x} dx \) using Taylor Series expansion and switching the order of integration and summation.
 Firstly, we notice that $$ \frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n $$
-by taylor series expansion. This series coverges for \(x \in (0,1)\)so we can substitute this into the integral:
+by taylor series expansion. This series coverges for \(x \in (0,1)\) so we can substitute this into the integral:
 $$ \int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx $$
 Further, by changing the order of integration and summation, we have $$ \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx $$</description>
     </item>
