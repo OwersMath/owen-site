@@ -112,8 +112,8 @@ and
 We will use the first fundamental form to evaluate this arc length. First we see that
 
 $$
-E=X_u \cdot X_u = 1+4u^2 \tab
-F=X_u \cdot X_v = 4uv \tab
+E=X_u \cdot X_u = 1+4u^2 ,
+F=X_u \cdot X_v = 4uv ,
 G=X_v \cdot X_v = 1+v^2
 $$
 
@@ -127,8 +127,8 @@ and
 {{</ math.inline >}}
 in, we have that 
 $$
-E= 1+4t^2 \tab
-F= 4t^2 \tab
+E= 1+4t^2 ,
+F= 4t^2 ,
 G= 1+t^2
 $$
 Now, we have our equation
