@@ -13,7 +13,7 @@
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/post/first-fundamental-form/</guid>
-      <description>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by \(u=u(t)\) and \(v=v(t)\) which lies on a surface \(X\) parametrized by \(X=X(u,v)\) we have that
+      <description>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by \(u=u(t)\)and \(v=v(t)\)which lies on a surface \(X\)parametrized by \(X=X(u,v)\)we have that
 $$ ds = |\frac{dX}{dt}| dt = |X_u \frac{du}{dt} + X_v \frac{dv}{dt}| dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})} $$
 Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</description>
     </item>
@@ -24,7 +24,7 @@ Now defining the coefficients, called the First Fundamental Form coefficients E,
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/post/evaluating-the-gaussian-integral/</guid>
-      <description>The Gaussian Integral is given by $$ \int_{-\infty}^{\infty} e^{-x^2} dx $$ This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\) we have that $$ I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx $$ From here, we will preform a change into polar coordinates, with \((x,y) \rightarrow (t, \theta)\) and \(x=r\cos\theta\) , \(y=r\sin\theta\) .</description>
+      <description>The Gaussian Integral is given by $$ \int_{-\infty}^{\infty} e^{-x^2} dx $$ This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\)we have that $$ I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx $$ From here, we will preform a change into polar coordinates, with \((x,y) \rightarrow (t, \theta)\)and \(x=r\cos\theta\), \(y=r\sin\theta\).</description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ Now defining the coefficients, called the First Fundamental Form coefficients E,
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</guid>
-      <description>For a set of orthonormal vectors \((v_1,v_2,...,v_m)\) in an m-dimensional vector space , and set of constants \(r_1,r_2,...r_m \in \mathbb{R}\) , if we consider the equation \(r_1v_1+r_2v_2+...+r_mv_m=0\) with the objective of demonstrating that the vectors in \((v_1,v_2,...,v_m)\) are linearly independent, then we must show that \(r_1=r_2=...=r_m=0\) . If we take the inner product on both sides of the equation , we have that
+      <description>For a set of orthonormal vectors \((v_1,v_2,...,v_m)\)in an m-dimensional vector space , and set of constants \(r_1,r_2,...r_m \in \mathbb{R}\), if we consider the equation \(r_1v_1+r_2v_2+...+r_mv_m=0\)with the objective of demonstrating that the vectors in \((v_1,v_2,...,v_m)\)are linearly independent, then we must show that \(r_1=r_2=...=r_m=0\). If we take the inner product on both sides of the equation , we have that
 $$ &amp;lt;r_1v_1+r_2v_2+&amp;hellip;+r_mv_m, v_1&amp;gt; = &amp;lt;0,v_1&amp;gt; $$
 Using the properties of inner products, we have that</description>
     </item>
@@ -44,9 +44,9 @@ Using the properties of inner products, we have that</description>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/post/a-fascinating-integral/</guid>
-      <description>We will evalute the integral \(\int_0^1 \frac{\ln(x)}{1+x} dx \) using Taylor Series expansion and switching the order of integration and summation.
+      <description>We will evalute the integral \(\int_0^1 \frac{\ln(x)}{1+x} dx \)using Taylor Series expansion and switching the order of integration and summation.
 Firstly, we notice that $$ \frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n $$
-by taylor series expansion. This series coverges for \(x \in (0,1)\) so we can substitute this into the integral:
+by taylor series expansion. This series coverges for \(x \in (0,1)\)so we can substitute this into the integral:
 $$ \int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx $$
 Further, by changing the order of integration and summation, we have $$ \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx $$</description>
     </item>
@@ -57,7 +57,7 @@ Further, by changing the order of integration and summation, we have $$ \int_0^1
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://drummond.nyc/post/basel-problem/</guid>
-      <description>The Basel Problem, named after Leonard Euler&amp;rsquo;s hometown of Basel, Switzerland, is the solution to the infinite series \(\sum_{n=1}^{\infty} \frac{\pi^2}{6}\) Euler was the first to publish his solution one year after having solved this problem in 1734. Since Euler&amp;rsquo;s solution, many alternative proofs have been offered, using complex analysis, symmetric polynomials, and so on. These alternative proofs are more rigorous than Euler&amp;rsquo;s liberal use of infinite polyomial tails, but Euler&amp;rsquo;s solution is perhaps the most elegant.</description>
+      <description>The Basel Problem, named after Leonard Euler&amp;rsquo;s hometown of Basel, Switzerland, is the solution to the infinite series \(\sum_{n=1}^{\infty} \frac{\pi^2}{6}\)Euler was the first to publish his solution one year after having solved this problem in 1734. Since Euler&amp;rsquo;s solution, many alternative proofs have been offered, using complex analysis, symmetric polynomials, and so on. These alternative proofs are more rigorous than Euler&amp;rsquo;s liberal use of infinite polyomial tails, but Euler&amp;rsquo;s solution is perhaps the most elegant.</description>
     </item>
     
   </channel>

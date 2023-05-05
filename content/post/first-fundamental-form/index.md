@@ -82,7 +82,7 @@ where
 {{</ math.inline >}}
 are vectors.
 
-## Example 1: Arc Length of a Line on a Paraboloid
+##Example 1: Arc Length of a Line on a Paraboloid##
 
 ![Paraboloid](FFFex1.png)
 
@@ -114,7 +114,7 @@ We will use the first fundamental form to evaluate this arc length. First we see
 $$
 E=X_u \cdot X_u = 1+4u^2 ,
 F=X_u \cdot X_v = 4uv ,
-G=X_v \cdot X_v = 1+v^2
+G=X_v \cdot X_v = 1+4v^2
 $$
 
 substituting 
@@ -129,7 +129,7 @@ in, we have that
 $$
 E= 1+4t^2 ,
 F= 4t^2 ,
-G= 1+t^2
+G= 1+4t^2
 $$
 Now, we have our equation
 
@@ -143,4 +143,60 @@ $$
 This is quite a difficult integral, which is usually the case when computing arc length, but we do obtain an analytical antiderivative, so our definite integral has the solution
 $$
 \ell = 4 (\frac{t}{8} \sqrt{16t^2} + \frac{1}{16} ln (\sqrt{8t^2+1}+2\sqrt{2}t) |_{0}^{1}) = \frac{1}{2} (3\sqrt{2}+\frac{1}{2} ln(2+2 \sqrt{2})) \approx 2.562
+$$
+
+## Example 2: Area of a Region on a Surface
+
+Here, we can utilize the First Fundamental Form to compute a given region on a surface. Note that for the area of a small parallelogram with verticies
+{{< math.inline >}}
+\(X(u_0,v_0) , X(u_0, \epsilon + v_0), X(\epsilon + u_0, v_0), X(\epsilon + u_0, \epsilon + v_0)\)
+{{</ math.inline >}}
+we can compute the area of this parallelogram using the cross product:
+$$
+\delta A = |X_u \delta u \times X_v \delta v| = \sqrt{EG - F^2} \delta u \delta v \implies dA = \sqrt{EG - F^2} du dv
+$$
+Now let us look at an example using the same paraboloid parametrization we used in Example one, but let 
+{{< math.inline >}}
+\(-1 \leq u,v \leq 1\)
+{{</ math.inline >}}
+and let
+{{< math.inline >}}
+\(u^2+v^2=1\)
+{{</ math.inline >}}
+be a circle on the paraboloid. Our first fundamental form coefficients are the same, so we have that 
+$$
+dA=\sqrt{EG - F^2} du dv= \sqrt{(1+4u^2)(1+4v^2)-(4uv)^2} du dv =\sqrt{1+4u^2+4v^2} du dv
+$$
+Thus, letting
+{{< math.inline >}}
+\(D={(u_0,v_0 : u_0^2+v_0^2 = 1\)
+{{</ math.inline >}}
+we have that
+$$
+A_{S} = \int_{D} dA = \int_{D} dA = \int_{D} \sqrt{1+4u^2+4v^2} du dv
+$$
+Performing a change to polar coordinates with 
+{{< math.inline >}}
+\(u=r\cos\theta\)
+{{</ math.inline >}}
+and
+{{< math.inline >}}
+\(v=r\sin\theta\)
+{{</ math.inline >}}
+and integrating the full unit circle with radius 1, we have that
+$$
+A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4(r\cos\theta)^2+4(r\sin\theta)^2} r dr d\theta = \int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta
+$$
+Now using substitution with 
+{{< math.inline >}}
+\(p=1+4r^2\)
+{{</ math.inline >}}
+we have that
+Now using substitution with 
+{{< math.inline >}}
+\(\frac{dp}{8}=r dr\)
+{{</ math.inline >}}
+Thus, 
+$$
+A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta = \int_{0}^{2\pi} \int_{1}^{5} \frac{\sqrt{p}}{8} dp d\theta = \int_{0}^{2\pi}  \frac{x^{3/2}}{12}|_{1}^{5} d\theta = \int_{0}^{2\pi}  \frac{5^{3/2}-1}{12} d\theta = \frac{\pi (5^{3/2}-1)}{6}
 $$
