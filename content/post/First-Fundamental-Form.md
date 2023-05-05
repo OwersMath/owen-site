@@ -25,7 +25,9 @@ parametrized by
 {{</ math.inline >}}
 we have that 
 
-$$ ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \cdot{u} + X_v \cdot{v}}) \dot (X_u \cdot{u} + X_v \cdot{v}})}dt $$
+$$
+ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \dot{u} + X_v \dot {v}) \dot (X_u \dot{u} + X_v \dot{v})}
+$$
 
 Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have 
 
@@ -35,7 +37,9 @@ $$
 
 and moreover,
 
-$$ \sqrt{(X_u \cdot{u} + X_v \cdot{v}}) \dot (X_u \cdot{u} + X_v \cdot{v}})} = \sqrt{Edu^2 + 2F du dv + Gdv^2} $$
+$$
+\sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})} = \sqrt{Edu^2 + 2F du dv + Gdv^2}
+$$
 
 by direct computation. Now the **First Fundamental Form**, denoted I, is defined as
 
