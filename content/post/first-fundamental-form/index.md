@@ -69,12 +69,10 @@ It is worth nothing that I also has the symmetric matrix representation
 
 $$
 I=x^T
-
 \begin{bmatrix}
-E & F \\
+E & F \\\
 F & G 
 \end{bmatrix}
-
 y
 $$
 
