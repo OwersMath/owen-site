@@ -84,24 +84,20 @@ parametrized by
 \(X=X(u,v)\)
 
 we have that</p>
-<p>$$
-ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \dot{u} + X_v \dot{v}}) \dot (X_u \dot{u} + X_v \dot{v}})}dt
-$$</p>
+<p>$$ ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \cdot{u} + X_v \cdot{v}}) \dot (X_u \cdot{u} + X_v \cdot{v}})}dt $$</p>
 <p>Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</p>
 <p>$$
-E=X_u \dot X_u, F=X_u \dot X_v, G=X_v \dot X_v
+E=X_u \cdot X_u, F=X_u \cdot X_v, G=X_v \cdot X_v
 $$</p>
 <p>and moreover,</p>
-<p>$$
-\sqrt{(X_u \dot{u} + X_v \dot{v}}) \dot (X_u \dot{u} + X_v \dot{v}})} = \sqrt{Edu^2 + 2F du dv + Gdv^2}
-$$</p>
+<p>$$ \sqrt{(X_u \cdot{u} + X_v \cdot{v}}) \dot (X_u \cdot{u} + X_v \cdot{v}})} = \sqrt{Edu^2 + 2F du dv + Gdv^2} $$</p>
 <p>by direct computation. Now the <strong>First Fundamental Form</strong>, denoted I, is defined as</p>
 <p>$$
-I=ds^2=dX \dot dX = Edu^2 + 2F du dv + Gdv^2
+I=ds^2=dX \cdot dX = Edu^2 + 2F du dv + Gdv^2
 $$</p>
 <p>This quadratic form allows us to derive the curvature and metric properties of any surface, namely arc length and area. We see that</p>
 <p>$$
-(X_{u} \times X_{v})^2=(X_{u} \times X_{v}) \dot (X_{u} \times X_{v}) = (X_{u} \dot X_{u})(X_{v} \dot X_{v})-(X_{u} \dot X_{v})^2=EG - F^2 \geq 0
+(X_{u} \times X_{v})^2=(X_{u} \times X_{v}) \cdot (X_{u} \times X_{v}) = (X_{u} \cdot X_{u})(X_{v} \cdot X_{v})-(X_{u} \cdot X_{v})^2=EG - F^2 \geq 0
 $$</p>
 <p>and because
 
@@ -118,10 +114,10 @@ and
 It is worth nothing that I also has the symmetric matrix representation</p>
 <p>$$
 I=x^T
-\begin{bmatrix}
+\begin{pmatrix}
 E &amp; F \
 F &amp; G
-\end{bmatrix}
+\end{pmatrix}
 y
 $$</p>
 <p>where

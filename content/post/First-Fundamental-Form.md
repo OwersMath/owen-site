@@ -25,32 +25,28 @@ parametrized by
 {{</ math.inline >}}
 we have that 
 
-$$
-ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \dot{u} + X_v \dot{v}}) \dot (X_u \dot{u} + X_v \dot{v}})}dt
-$$
+$$ ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \cdot{u} + X_v \cdot{v}}) \dot (X_u \cdot{u} + X_v \cdot{v}})}dt $$
 
 Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have 
 
 $$
-E=X_u \dot X_u, F=X_u \dot X_v, G=X_v \dot X_v
+E=X_u \cdot X_u, F=X_u \cdot X_v, G=X_v \cdot X_v
 $$
 
 and moreover,
 
-$$
-\sqrt{(X_u \dot{u} + X_v \dot{v}}) \dot (X_u \dot{u} + X_v \dot{v}})} = \sqrt{Edu^2 + 2F du dv + Gdv^2}
-$$
+$$ \sqrt{(X_u \cdot{u} + X_v \cdot{v}}) \dot (X_u \cdot{u} + X_v \cdot{v}})} = \sqrt{Edu^2 + 2F du dv + Gdv^2} $$
 
 by direct computation. Now the **First Fundamental Form**, denoted I, is defined as
 
 $$
-I=ds^2=dX \dot dX = Edu^2 + 2F du dv + Gdv^2
+I=ds^2=dX \cdot dX = Edu^2 + 2F du dv + Gdv^2
 $$
 
 This quadratic form allows us to derive the curvature and metric properties of any surface, namely arc length and area. We see that 
 
 $$
-(X_{u} \times X_{v})^2=(X_{u} \times X_{v}) \dot (X_{u} \times X_{v}) = (X_{u} \dot X_{u})(X_{v} \dot X_{v})-(X_{u} \dot X_{v})^2=EG - F^2 \geq 0
+(X_{u} \times X_{v})^2=(X_{u} \times X_{v}) \cdot (X_{u} \times X_{v}) = (X_{u} \cdot X_{u})(X_{v} \cdot X_{v})-(X_{u} \cdot X_{v})^2=EG - F^2 \geq 0
 $$
  
 and because 
@@ -69,10 +65,10 @@ It is worth nothing that I also has the symmetric matrix representation
 
 $$
 I=x^T 
-\begin{bmatrix}
+\begin{pmatrix}
 E & F \\
 F & G 
-\end{bmatrix}
+\end{pmatrix} 
 y
 $$
 
