@@ -149,7 +149,7 @@ $$
 
 ## Example 2: Area of a Region on a Surface
 
-![Area of a Parallelogram](area-p.jpg)
+![Area of a Parallelogram](IMG_0251.jpg)
 
 Here, we can utilize the First Fundamental Form to compute a given region on a surface. Note that for the area of a small parallelogram with verticies
 {{< math.inline >}}
@@ -201,5 +201,5 @@ we have that
 {{</ math.inline >}}
 and thus
 $$
-A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta = \int_{0}^{2\pi} \int_{1}^{5} \frac{\sqrt{p}}{8} dp d\theta = \int_{0}^{2\pi} \frac{x^{3/2}}{12}|\_{1}^{5}  d\theta = \int_{0}^{2\pi}  \frac{5^{3/2}-1}{12} d\theta = \frac{\pi (5^{3/2}-1)}{6}
+A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta = \int_{0}^{2\pi} \int_{1}^{5} \frac{\sqrt{p}}{8} dp d\theta = \int_{0}^{2\pi} \frac{x^{3/2}}{12}|\_{1}^{5}  d\theta = \int_{0}^{2\pi}  \frac{5^{3/2}-1}{12} d\theta = \frac{\pi (5^{3/2}-1)}{6} \approx 5.3304
 $$
