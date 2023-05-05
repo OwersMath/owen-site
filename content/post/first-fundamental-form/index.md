@@ -68,11 +68,13 @@ and
 It is worth nothing that I also has the symmetric matrix representation
 
 $$
-I=x^T 
-\begin{pmatrix}
+I=x^T
+
+\begin{bmatrix}
 E & F \\
 F & G 
-\end{pmatrix} 
+\end{bmatrix}
+
 y
 $$
 
@@ -82,7 +84,7 @@ where
 {{</ math.inline >}}
 are vectors.
 
-##Example 1: Arc Length of a Line on a Paraboloid##
+## Example 1: Arc Length of a Line on a Paraboloid
 
 ![Paraboloid](FFFex1.png)
 
