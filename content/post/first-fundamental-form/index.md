@@ -171,11 +171,11 @@ dA=\sqrt{EG - F^2} du dv= \sqrt{(1+4u^2)(1+4v^2)-(4uv)^2} du dv =\sqrt{1+4u^2+4v
 $$
 Thus, letting
 {{< math.inline >}}
-\(D={(u_0,v_0 : u_0^2+v_0^2 = 1}\)
+\(D=\{(u_0,v_0) : u_0^2+v_0^2 = 1\}\)
 {{</ math.inline >}}
 we have that
 $$
-A_{S} = \int_{D} dA = \int_{D} dA = \int_{D} \sqrt{1+4u^2+4v^2} du dv
+A_{S} = \int_{D} dA = \int_{D} \sqrt{1+4u^2+4v^2} du dv
 $$
 Performing a change to polar coordinates with 
 {{< math.inline >}}
@@ -194,12 +194,10 @@ Now using substitution with
 \(p=1+4r^2\)
 {{</ math.inline >}}
 we have that
-Now using substitution with 
 {{< math.inline >}}
 \(\frac{dp}{8}=r dr\)
 {{</ math.inline >}}
-Thus, 
-
+and thus
 $$
-A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta = \int_{0}^{2\pi} \int_{1}^{5} \frac{\sqrt{p}}{8} dp d\theta = \int_{0}^{2\pi}  \frac{x^{3/2}}{12}|_{1}^{5} d\theta = \int_{0}^{2\pi}  \frac{5^{3/2}-1}{12} d\theta = \frac{\pi (5^{3/2}-1)}{6}
+A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta = \int_{0}^{2\pi} \int_{1}^{5} \frac{\sqrt{p}}{8} dp d\theta = \int_{0}^{2\pi} \frac{x^{3/2}}{12}|\_{1}^{5}  d\theta = \int_{0}^{2\pi}  \frac{5^{3/2}-1}{12} d\theta = \frac{\pi (5^{3/2}-1)}{6}
 $$
