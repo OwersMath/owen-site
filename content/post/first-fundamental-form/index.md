@@ -147,9 +147,11 @@ $$
 
 ## Example 2: Area of a Region on a Surface
 
+![Area of a Parallelogram](IMG_0251.jpg)
+
 Here, we can utilize the First Fundamental Form to compute a given region on a surface. Note that for the area of a small parallelogram with verticies
 {{< math.inline >}}
-\(X(u_0,v_0) , X(u_0, \epsilon + v_0), X(\epsilon + u_0, v_0), X(\epsilon + u_0, \epsilon + v_0)\)
+\(X(u_0,v_0) , X(u_0, \delta v + v_0), X(\delta u + u_0, v_0), X(\delta u + u_0, \delta v + v_0)\)
 {{</ math.inline >}}
 we can compute the area of this parallelogram using the cross product:
 $$
@@ -169,7 +171,7 @@ dA=\sqrt{EG - F^2} du dv= \sqrt{(1+4u^2)(1+4v^2)-(4uv)^2} du dv =\sqrt{1+4u^2+4v
 $$
 Thus, letting
 {{< math.inline >}}
-\(D={(u_0,v_0 : u_0^2+v_0^2 = 1\)
+\(D={(u_0,v_0 : u_0^2+v_0^2 = 1}\)
 {{</ math.inline >}}
 we have that
 $$
@@ -197,6 +199,7 @@ Now using substitution with
 \(\frac{dp}{8}=r dr\)
 {{</ math.inline >}}
 Thus, 
+
 $$
 A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta = \int_{0}^{2\pi} \int_{1}^{5} \frac{\sqrt{p}}{8} dp d\theta = \int_{0}^{2\pi}  \frac{x^{3/2}}{12}|_{1}^{5} d\theta = \int_{0}^{2\pi}  \frac{5^{3/2}-1}{12} d\theta = \frac{\pi (5^{3/2}-1)}{6}
 $$
