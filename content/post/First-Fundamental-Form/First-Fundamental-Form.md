@@ -82,7 +82,7 @@ where
 {{</ math.inline >}}
 are vectors.
 
-## Example 1: Arc Length of a Line on a Paraboloid
+##Example 1: Arc Length of a Line on a Paraboloid##
 
 ![Paraboloid](FFFex1.png)
 
@@ -112,8 +112,8 @@ and
 We will use the first fundamental form to evaluate this arc length. First we see that
 
 $$
-E=X_u \cdot X_u = 1+4u^2 ,
-F=X_u \cdot X_v = 4uv ,
+E=X_u \cdot X_u = 1+4u^2 \tab
+F=X_u \cdot X_v = 4uv \tab
 G=X_v \cdot X_v = 1+v^2
 $$
 
@@ -127,8 +127,8 @@ and
 {{</ math.inline >}}
 in, we have that 
 $$
-E= 1+4t^2 ,
-F= 4t^2 ,
+E= 1+4t^2 \tab
+F= 4t^2 \tab
 G= 1+t^2
 $$
 Now, we have our equation
@@ -142,5 +142,5 @@ $$
 $$
 This is quite a difficult integral, which is usually the case when computing arc length, but we do obtain an analytical antiderivative, so our definite integral has the solution
 $$
-\ell = 4 (\frac{t}{8} \sqrt{16t^2} + \frac{1}{16} \ln (\sqrt{8t^2+1}+2\sqrt{2}t) |_{0}^{1}) = \frac{1}{2} (3\sqrt{2}+\frac{1}{2} \ln(2+2 \sqrt{2})) \approx 2.562
+\ell = 4 (\frac{t}{8} \sqrt{16t^2} + \frac{1}{16} ln (\sqrt{8t^2+1}+2\sqrt{2}t) |_{0}^{1}) = \frac{1}{2} (3\sqrt{2}+\frac{1}{2} ln(2+2 \sqrt{2})) \approx 2.562
 $$
