@@ -25,9 +25,9 @@ parametrized by
 {{</ math.inline >}}
 we have that 
 
-{{< math.inline >}}
-\(ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \dot{u} + X_v \dot {v}) \dot (X_u \dot{u} + X_v \dot{v})}\)
-{{</ math.inline >}}
+$$
+ds=|\frac{dX}{dt}|dt=|X_{u} \frac{du}{dt} + X_{v} \frac{dv}{dt}|dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})}
+$$
 
 Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have 
 
