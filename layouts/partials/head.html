@@ -4,6 +4,7 @@
 {{ else }}
   <title>{{ .Site.Title }}</title>
 {{ end }}
+<link rel="icon" href="{{ "favicon.png" | absURL }}" type="image/png">
 {{ with .Site.Params.description }}
   <meta name="description" content="{{ . }}" />
 {{ end }}
