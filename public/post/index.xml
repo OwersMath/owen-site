@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Owen&#39;s Math Portal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drummond.nyc/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drummond.nyc/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Space of Invertible Matricies is Dense in the Space of All Matricies</title>
+      <link>https://drummond.nyc/post/invrt-proof/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://drummond.nyc/post/invrt-proof/</guid>
+      <description>To prove that the space of all invetible matricies is dense in the space of all matricies, it will suffice to show that the space of all invertible matricies is dense the space of matricies with distinct eigenvalues, as the space of matricies with distinct eigenvalues is dense in the space of all matricies. Denote \(E(n, \mathbb{R}) \) as the space of matricies with n distinct eigenvalues. Formally, $$ E(n, ℝ) = { \begin{bmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n} \\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n} \\ \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\ a_{n1} &amp;amp; a_{n2} &amp;amp; \cdots &amp;amp; a_{nn} \\ \end{bmatrix} : a_{ij} \in ℝ, \hspace{0.</description>
+    </item>
+    
     <item>
       <title>First Fundamental Form</title>
       <link>https://drummond.nyc/post/first-fundamental-form/</link>
@@ -36,16 +45,6 @@ Now defining the coefficients, called the First Fundamental Form coefficients E,
       <description>For a set of orthonormal vectors \((v_1,v_2,...,v_m)\)in an m-dimensional vector space , and set of constants \(r_1,r_2,...r_m \in \mathbb{R}\), if we consider the equation \(r_1v_1+r_2v_2+...+r_mv_m=0\)with the objective of demonstrating that the vectors in \((v_1,v_2,...,v_m)\)are linearly independent, then we must show that \(r_1=r_2=...=r_m=0\). If we take the inner product on both sides of the equation , we have that
 $$ &amp;lt;r_1v_1+r_2v_2+&amp;hellip;+r_mv_m, v_1&amp;gt; = &amp;lt;0,v_1&amp;gt; $$
 Using the properties of inner products, we have that</description>
-    </item>
-    
-    <item>
-      <title>The Space of Invertible Matricies is Dense in the Space of All Matricies</title>
-      <link>https://drummond.nyc/post/invrt-proof/</link>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://drummond.nyc/post/invrt-proof/</guid>
-      <description>To proof that the space of all invetible matricies is dense in the space of all matricies, it will suffice to show that the space of all invertible matricies is dense the space of matricies with distinct eigenvalues, as the space of matricies with distinct eigenvalues is dense in the space of all matricies. Denote E(n, \(\mathbb{R}\) ) as the space of matricies with n distinct eigenvalues. Formally,
-$$ E(n, \mathbb{R}) = {\begin{bmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n} \\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n} \\ \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\ a_{n1} &amp;amp; a_{n2} &amp;amp; \cdots &amp;amp; a_{nn} \\ \end{bmatrix} : a_{ij} \in \mathbb{R}, and \lambda_{1}, \lambda_{2}, &amp;hellip; \lambda_{n} all distinct evalues $$</description>
     </item>
     
     <item>
