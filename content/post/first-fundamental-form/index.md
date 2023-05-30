@@ -147,7 +147,7 @@ $$
 
 ## Example 2: Area of a Region on a Surface
 
-![Area of a Parallelogram](Para.png)
+![Area of a Parallelogram](AreaOfAPara.png)
 
 Here, we can utilize the First Fundamental Form to compute a given region on a surface. Note that for the area of a small parallelogram with verticies
 {{< math.inline >}}
