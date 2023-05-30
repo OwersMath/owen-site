@@ -1,8 +1,0 @@
-85c85
-< ## Example 1: Arc Length of a Line on a Paraboloid
----
-> ##Example 1: Arc Length of a Line on a Paraboloid##
-145c145
-< \ell = 4 (\frac{t}{8} \sqrt{16t^2} + \frac{1}{16} \ln (\sqrt{8t^2+1}+2\sqrt{2}t) |_{0}^{1}) = \frac{1}{2} (3\sqrt{2}+\frac{1}{2} \ln(2+2 \sqrt{2})) \approx 2.562
----
-> \ell = 4 (\frac{t}{8} \sqrt{16t^2} + \frac{1}{16} ln (\sqrt{8t^2+1}+2\sqrt{2}t) |_{0}^{1}) = \frac{1}{2} (3\sqrt{2}+\frac{1}{2} ln(2+2 \sqrt{2})) \approx 2.562
