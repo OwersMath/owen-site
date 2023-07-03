@@ -3,10 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://drummond.nyc/</loc>
-    <lastmod>2023-05-27T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://drummond.nyc/tags/calculus/</loc>
+    <lastmod>2023-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://drummond.nyc/post/7-2-int/</loc>
+    <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://drummond.nyc/post/</loc>
-    <lastmod>2023-05-27T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://drummond.nyc/tags/</loc>
+    <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://drummond.nyc/post/invrt-proof/</loc>
     <lastmod>2023-05-27T00:00:00+00:00</lastmod>
@@ -16,12 +25,6 @@
   </url><url>
     <loc>https://drummond.nyc/tags/geometry/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://drummond.nyc/tags/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://drummond.nyc/tags/calculus/</loc>
-    <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://drummond.nyc/post/evaluating-the-gaussian-integral/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
