@@ -25,7 +25,7 @@ and notice that because
 {{</ math.inline >}} 
 
 $$
-\lim_{\alpha \rightarrow \infty 0} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha}
+\lim_{\alpha \rightarrow \infty} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha}
 $$
 
 so 

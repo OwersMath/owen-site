@@ -15,7 +15,7 @@
       <guid>https://drummond.nyc/post/dirichlet/</guid>
       <description>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as $$ \int_{0}^{\infty} \frac{\sin(x)}{x} dx $$
 Feynman Integration We employ Feynman&amp;rsquo;s Integration trick here by first defining the function $$ I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx $$
-and notice that because \(|\frac{\sin(x)}{x}| \leq 1 \)$$ \lim_{\alpha \rightarrow \infty 0} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha} $$
+and notice that because \(|\frac{\sin(x)}{x}| \leq 1 \)$$ \lim_{\alpha \rightarrow \infty} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha} $$
 so \(I(\alpha) \)vanishes as \(\alpha \rightarrow \infty \)and thus we can continue with Fenyman&amp;rsquo;s technique: $$ \frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx $$ now by integration by parts, we have that $$ -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx $$</description>
     </item>
     
