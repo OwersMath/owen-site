@@ -1,7 +1,7 @@
 ---
 author: Owen Drummond
 title: Dirichlet Integral - Two Ways
-date: 2023-07-02
+date: 2023-07-07
 description: Dirichlet Integral - Two Ways
 math: true
 tags: ["Calculus"]
