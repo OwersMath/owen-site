@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<meta name="generator" content="Hugo 0.112.3"><body>
+<meta name="generator" content="Hugo 0.111.3"><body>
 
 
   
@@ -78,6 +78,27 @@
 
       
         <article class="post-preview">
+  <a href="https://drummond.nyc/post/dirichlet/">
+      <h2 class="post-title">Dirichlet Integral - Two Ways</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>Jul 2, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as $$ \int_{0}^{\infty} \frac{\sin(x)}{x} dx $$
+Feynman Integration We employ Feynman&rsquo;s Integration trick here by first defining the function $$ I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx $$
+and notice that because \(|\frac{\sin(x)}{x}| \leq 1 \)$$ \lim_{\alpha \rightarrow \infty 0} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha} $$
+so \(I(\alpha) \)vanishes as \(\alpha \rightarrow \infty \)and thus we can continue with Fenyman&rsquo;s technique: $$ \frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx $$ now by integration by parts, we have that $$ -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx $$</p>
+        <a href="https://drummond.nyc/post/dirichlet/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
   <a href="https://drummond.nyc/post/7-2-int/">
       <h2 class="post-title">Integral of the Day - 7/2/2023</h2>
   </a>
@@ -89,7 +110,7 @@
   </div>
   <div class="post-entry">
     
-      <p>Today, we will be evaluating the integral $$ \int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R} $$ The restriction of \(a\) to \(\mathbb{R^{-}}\) is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely, \(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\) . To do this, we complete the square on \(f(x)=ax^2+bx+c\) : $$ y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x $$ Further, $$ \frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2} $$ Lastly, $$ y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c $$ Thus we have that $$ I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx $$ Given that this integrand spans all of \(\mathbb{R}\) we can employ the substitution \(t=x+\frac{b}{2a}\) and our bounds will remain the same.</p>
+      <p>Today, we will be evaluating the integral $$ \int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R} $$ The restriction of \(a\)to \(\mathbb{R^{-}}\)is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely, \(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\). To do this, we complete the square on \(f(x)=ax^2+bx+c\): $$ y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x $$ Further, $$ \frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2} $$ Lastly, $$ y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c $$ Thus we have that $$ I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx $$ Given that this integrand spans all of \(\mathbb{R}\)we can employ the substitution \(t=x+\frac{b}{2a}\)and our bounds will remain the same.</p>
         <a href="https://drummond.nyc/post/7-2-int/" class="post-read-more">Read More</a>
     
   </div>
@@ -109,26 +130,6 @@
     
       <p>To prove that the space of all invetible matricies is dense in the space of all matricies, it will suffice to show that the space of all invertible matricies is dense the space of matricies with distinct eigenvalues, as the space of matricies with distinct eigenvalues is dense in the space of all matricies. Denote \(E(n, \mathbb{R}) \) as the space of matricies with n distinct eigenvalues. Formally, $$ E(n, ℝ) = { \begin{bmatrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn} \\ \end{bmatrix} : a_{ij} \in ℝ, \hspace{0.</p>
         <a href="https://drummond.nyc/post/invrt-proof/" class="post-read-more">Read More</a>
-    
-  </div>
-</article>
-      
-        <article class="post-preview">
-  <a href="https://drummond.nyc/post/first-fundamental-form/">
-      <h2 class="post-title">First Fundamental Form</h2>
-  </a>
-  <div class="postmeta">
-    <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>May 4, 2023
-  
-</span>
-  </div>
-  <div class="post-entry">
-    
-      <p>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by \(u=u(t)\) and \(v=v(t)\) which lies on a surface \(X\) parametrized by \(X=X(u,v)\) we have that
-$$ ds = |\frac{dX}{dt}| dt = |X_u \frac{du}{dt} + X_v \frac{dv}{dt}| dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})} $$
-Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</p>
-        <a href="https://drummond.nyc/post/first-fundamental-form/" class="post-read-more">Read More</a>
     
   </div>
 </article>

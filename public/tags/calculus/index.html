@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<meta name="generator" content="Hugo 0.112.3"><body>
+<meta name="generator" content="Hugo 0.111.3"><body>
 
 
 
@@ -65,6 +65,27 @@
 
       
         <article class="post-preview">
+  <a href="https://drummond.nyc/post/dirichlet/">
+      <h2 class="post-title">Dirichlet Integral - Two Ways</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>Jul 2, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as $$ \int_{0}^{\infty} \frac{\sin(x)}{x} dx $$
+Feynman Integration We employ Feynman&rsquo;s Integration trick here by first defining the function $$ I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx $$
+and notice that because \(|\frac{\sin(x)}{x}| \leq 1 \)$$ \lim_{\alpha \rightarrow \infty 0} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha} $$
+so \(I(\alpha) \)vanishes as \(\alpha \rightarrow \infty \)and thus we can continue with Fenyman&rsquo;s technique: $$ \frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx $$ now by integration by parts, we have that $$ -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx $$</p>
+        <a href="https://drummond.nyc/post/dirichlet/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
   <a href="https://drummond.nyc/post/7-2-int/">
       <h2 class="post-title">Integral of the Day - 7/2/2023</h2>
   </a>
@@ -76,7 +97,7 @@
   </div>
   <div class="post-entry">
     
-      <p>Today, we will be evaluating the integral $$ \int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R} $$ The restriction of \(a\) to \(\mathbb{R^{-}}\) is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely, \(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\) . To do this, we complete the square on \(f(x)=ax^2+bx+c\) : $$ y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x $$ Further, $$ \frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2} $$ Lastly, $$ y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c $$ Thus we have that $$ I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx $$ Given that this integrand spans all of \(\mathbb{R}\) we can employ the substitution \(t=x+\frac{b}{2a}\) and our bounds will remain the same.</p>
+      <p>Today, we will be evaluating the integral $$ \int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R} $$ The restriction of \(a\)to \(\mathbb{R^{-}}\)is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely, \(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\). To do this, we complete the square on \(f(x)=ax^2+bx+c\): $$ y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x $$ Further, $$ \frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2} $$ Lastly, $$ y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c $$ Thus we have that $$ I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx $$ Given that this integrand spans all of \(\mathbb{R}\)we can employ the substitution \(t=x+\frac{b}{2a}\)and our bounds will remain the same.</p>
         <a href="https://drummond.nyc/post/7-2-int/" class="post-read-more">Read More</a>
     
   </div>
@@ -94,36 +115,23 @@
   </div>
   <div class="post-entry">
     
-      <p>The Gaussian Integral is given by $$ \int_{-\infty}^{\infty} e^{-x^2} dx $$ This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\) we have that $$ I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx $$ From here, we will preform a change into polar coordinates, with \((x,y) \rightarrow (t, \theta)\) and \(x=r\cos\theta\) , \(y=r\sin\theta\) .</p>
+      <p>The Gaussian Integral is given by $$ \int_{-\infty}^{\infty} e^{-x^2} dx $$ This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\)we have that $$ I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx $$ From here, we will preform a change into polar coordinates, with \((x,y) \rightarrow (t, \theta)\)and \(x=r\cos\theta\), \(y=r\sin\theta\).</p>
         <a href="https://drummond.nyc/post/evaluating-the-gaussian-integral/" class="post-read-more">Read More</a>
-    
-  </div>
-</article>
-      
-        <article class="post-preview">
-  <a href="https://drummond.nyc/post/a-fascinating-integral/">
-      <h2 class="post-title">A Fascinating Integral</h2>
-  </a>
-  <div class="postmeta">
-    <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>Apr 10, 2023
-  
-</span>
-  </div>
-  <div class="post-entry">
-    
-      <p>We will evalute the integral \(\int_0^1 \frac{\ln(x)}{1+x} dx \) using Taylor Series expansion and switching the order of integration and summation.
-Firstly, we notice that $$ \frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n $$
-by taylor series expansion. This series coverges for \(x \in (0,1)\) so we can substitute this into the integral:
-$$ \int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx $$
-Further, by changing the order of integration and summation, we have $$ \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx $$</p>
-        <a href="https://drummond.nyc/post/a-fascinating-integral/" class="post-read-more">Read More</a>
     
   </div>
 </article>
       
       </div>
     
+    <ul class="pager">
+      
+      
+        <li class="next">
+          <a href="https://drummond.nyc/tags/calculus/page/2/">Older &rarr;</a>
+        </li>
+      
+    </ul>
+  
 </div>
 
         </div><footer>

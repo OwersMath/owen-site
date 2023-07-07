@@ -74,7 +74,7 @@ $$
 
 and thus
 $$
-\int_{0}^{\infty} \frac{\sin(x)}{x} dx = \frac{\pi}{2}
+\boxed{\int_{0}^{\infty} \frac{\sin(x)}{x} dx = \frac{\pi}{2}}
 $$
 
 ### Contour Integration
@@ -194,7 +194,7 @@ $$
 $$
 so we conclude that 
 $$
-\pi= \int_{-\infty}^{\infty} \frac{\sin(x)}{x} dx \implies \frac{\pi}{2} = \int_{0}^{\infty} \frac{\sin(x)}{x} dx
+\pi= \int_{-\infty}^{\infty} \frac{\sin(x)}{x} dx \implies \boxed{\frac{\pi}{2} = \int_{0}^{\infty} \frac{\sin(x)}{x} dx}
 $$
 by the symmetry of 
 $$
