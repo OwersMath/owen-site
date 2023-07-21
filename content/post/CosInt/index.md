@@ -16,7 +16,7 @@ using Cauchy's Residue Theorem and contour integration. This is one of the most 
 \(\mathbb{C}\)
 {{</ math.inline >}}:
 $$
-f(z)=\frac{e^{iz}}{x^2+1}
+f(z)=\frac{e^{iz}}{z^2+1}
 $$
 and let us use the canonical contour, that is, the top half of a semicircle in the complex plane. Let us define this contour as 
 {{< math.inline >}}
