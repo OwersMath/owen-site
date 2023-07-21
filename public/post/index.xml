@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Owen&#39;s Math Portal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drummond.nyc/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://drummond.nyc/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Most Beautiful Result in Calculus</title>
+      <link>https://drummond.nyc/post/cosint/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://drummond.nyc/post/cosint/</guid>
+      <description>Today, we will evaluate the integral $$ \int_{-\infty}^{\infty} \frac{\cos(x)}{x^2+1} dx $$ using Cauchy&amp;rsquo;s Residue Theorem and contour integration. This is one of the most beautiful results in all of calculus, and the solution is rather elegant. To begin, let us define the following function in \(\mathbb{C}\): $$ f(z)=\frac{e^{iz}}{x^2+1} $$ and let us use the canonical contour, that is, the top half of a semicircle in the complex plane. Let us define this contour as \(C\), with radius \(R\).</description>
+    </item>
+    
     <item>
       <title>Dirichlet Integral - Two Ways</title>
       <link>https://drummond.nyc/post/dirichlet/</link>

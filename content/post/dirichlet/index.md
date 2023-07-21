@@ -129,7 +129,7 @@ Firstly, note that because
 {{</ math.inline >}}
 has no singularities within the contour C, we observe that
 $$
-\oint_C f(z) dz = \oint_C \frac{e^{iz}{z}} dz = 2\pi i Res(f,C) = 2\pi i (0) = 0
+\oint_C f(z) dz = \oint_C \frac{e^{iz}}{z} dz = 2\pi i Res(f,C) = 2\pi i (0) = 0
 $$
 now solving for each integral, we have that
 
