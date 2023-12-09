@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8" />
+
+  <title>Dirichlet Integral - Two Ways - Owen&#39;s Math Portal</title>
+
+<link rel="icon" href="https://drummond.nyc/favicon.png" type="image/png">
+
+  <meta name="description" content="Owen Drummond&#39;s mathematics portal." />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="https://drummond.nyc/css/latex.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/main.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta name="generator" content="Hugo 0.120.1"><body>
+
+
+
+
+
+
+<header>
+  <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+    </ul>
+  </div>
+</nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="post-heading">
+        
+          <h1>Dirichlet Integral - Two Ways</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+<div id="content">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      <div class="postmeta">
+        <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>Jul 7, 2023
+  
+</span>
+      </div>
+      <br>
+      
+    <p>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as
+$$
+\int_{0}^{\infty} \frac{\sin(x)}{x} dx
+$$</p>
+<h3 id="feynman-integration">Feynman Integration</h3>
+<p>We employ Feynman&rsquo;s Integration trick here by first defining the function
+$$
+I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx
+$$</p>
+<p>and notice that because
+
+\(|\frac{\sin(x)}{x}| \leq 1 \)
+</p>
+<p>$$
+\lim_{\alpha \rightarrow \infty} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha}
+$$</p>
+<p>so
+
+\(I(\alpha) \)
+
+vanishes as
+
+\(\alpha \rightarrow \infty \)
+
+and thus we can continue with Fenyman&rsquo;s technique:
+$$
+\frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx
+$$
+now by integration by parts, we have that
+$$
+-\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx
+$$</p>
+<p>using integration by parts once more, we have that
+$$
+-1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx= -1+\alpha^2 \int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1 - \alpha^2 I&rsquo;(\alpha)
+$$
+and thus
+$$
+I&rsquo;(\alpha)=-1 - \alpha^2 I&rsquo;(\alpha) \implies I&rsquo;(\alpha)(1+\alpha^2)=-1 \implies I&rsquo;(\alpha)=-\frac{1}{1+\alpha^2}
+$$</p>
+<p>Next, observe that</p>
+<p>$$
+\int I&rsquo;(\alpha) d\alpha = \int -\frac{1}{1+\alpha^2} d\alpha = -\arctan(\alpha) + C = I(\alpha)
+$$</p>
+<p>by the fundamental theorem of Calculus. In solving for C, we have</p>
+<p>$$
+I(\infty)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\infty x} dx = 0 = -\arctan(\infty) + C \implies C=\arctan(\infty)=\frac{\pi}{2}
+$$</p>
+<p>finally, we have that</p>
+<p>$$
+\int_{0}^{\infty} \frac{\sin(x)}{x} dx = I(0)= -\arctan(0)+\frac{\pi}{2}=\frac{\pi}{2}
+$$</p>
+<p>and thus
+$$
+\boxed{\int_{0}^{\infty} \frac{\sin(x)}{x} dx = \frac{\pi}{2}}
+$$</p>
+<h3 id="contour-integration">Contour Integration</h3>
+<p>Here, we will use Cauchy&rsquo;s Residue Theorem, which states that</p>
+<p>$$
+\oint_{C} f(z) dx = 2\pi i Res(f,C)
+$$</p>
+<p>where C is a simple closed curve. Let us define
+
+\(f(z)=e^{iz}/z\)
+
+and note that
+
+\(f\)
+
+has a singularity at
+
+\(z=0\)
+.
+Thus, in constructing a countor for
+
+\(f\)
+,</p>
+<p>we will have a path which is a semicircle of radius R traveling counterclockwise, then on the real axis across an smaller semicircle radius
+
+\(\epsilon\)
+</p>
+<p><img src="IMG_1442.svg" alt="Contour"></p>
+<p>the result of the integral along this path C is</p>
+<p>$$
+\oint_C f(z) dz = \int_{\Gamma} f(z) dx + \int_{\gamma} f(z) dx + \int_{-R}^{-\epsilon} f(z) dz + \int_{\epsilon}^{R} f(z) dz
+$$</p>
+<p>We want to examine the case where
+
+\(R \rightarrow \infty\)
+
+and
+
+\(\epsilon \rightarrow 0\)
+ since these are the bounds of our integral.
+Firstly, note that because
+
+\(f\)
+
+has no singularities within the contour C, we observe that
+$$
+\oint_C f(z) dz = \oint_C \frac{e^{iz}}{z} dz = 2\pi i Res(f,C) = 2\pi i (0) = 0
+$$
+now solving for each integral, we have that</p>
+<p>$$
+\int_{\Gamma} f(z) dx = \int_{\Gamma} \frac{e^{iz}}{z} dz = \int_{0}^{\pi} \frac{e^{iRe^{i\theta}}}{Re^{i\theta}} iRe^{i\theta} d\theta = \int_{0}^{\pi} ie^{iRe^{i\theta}} d\theta
+$$</p>
+<p>and now note that
+$$
+|\int_{\Gamma} f(z) dx| \leq \int_{0}^{\pi} |ie^{iRe^{i\theta}}| d\theta =  \int_{0}^{\pi} |ie^{iR\cos(\theta)-R\sin(\theta)}| d\theta \leq \int_{0}^{\pi} |e^{-Rsin\theta}| d\theta
+$$</p>
+<p>and as
+
+\(R \rightarrow \infty , e^{-Rsin\theta} \rightarrow 0\)
+</p>
+<p>so we have that
+$$
+\int_{\Gamma} f(z) dx \leq \int |e^{-Rsin\theta}| d\theta \rightarrow_{R \rightarrow \infty} 0 \implies \int_{\Gamma} f(z) = 0
+$$</p>
+<p>Next,</p>
+<p>$$
+\int_{\gamma} f(z) dx = \int_{\pi}^{0} \frac{e^{i \epsilon e^{i\theta}}}{\epsilon e^{i\theta}} i \epsilon e^{i\theta} d\theta = -\int_{0}^{\pi} i e^{i \epsilon e^{i\theta}} d\theta
+$$</p>
+<p>and note that as
+
+\(\epsilon \rightarrow 0\)
+,
+
+\(e^{i \epsilon e^{i\theta}} \rightarrow 1\)
+
+so</p>
+<p>$$
+\int_{\gamma} f(z) dx = -\int_{0}^{\pi} i e^{i \epsilon e^{i\theta}} d\theta = -\int_{0}^{\pi} i d\theta = -i \pi
+$$</p>
+<p>so far, we have that
+$$
+\oint_C f(z) dz = \int_{\Gamma} f(z) dx + \int_{\gamma} f(z) dx + \int_{-R}^{-\epsilon} f(z) dz + \int_{\epsilon}^{R} f(z) dz \implies
+0=0-i \pi + \int_{-R}^{-\epsilon} f(z) dz + \int_{\epsilon}^{R} f(z) dz
+$$
+now as
+
+\(R \rightarrow \infty\)
+
+and
+
+\(\epsilon \rightarrow 0\)
+,
+we have
+$$
+i \pi = \int_{-\infty}^{0} f(z) dz + \int_{0}^{\infty} f(z) dz = \int_{-\infty}^{\infty} \frac{e^{iz}}{z} dz
+$$
+Further,
+$$
+\mathnormal{Im}(i \pi)= \pi =\mathnormal{Im}(\int_{-\infty}^{\infty} \frac{e^{iz}}{z} dz)=\int_{-\infty}^{\infty} \mathnormal{Im}(\frac{e^{iz}}{z}) dz= \int_{-\infty}^{\infty} \frac{\sin(x)}{x} dx
+$$
+so we conclude that
+$$
+\pi= \int_{-\infty}^{\infty} \frac{\sin(x)}{x} dx \implies \boxed{\frac{\pi}{2} = \int_{0}^{\infty} \frac{\sin(x)}{x} dx}
+$$
+by the symmetry of
+$$
+f(x)=\frac{\sin(x)}{x}
+$$</p>
+
+
+
+      
+        <div class="blog-tags">
+          
+          <a href="https://drummond.nyc/tags/calculus/">Calculus</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+  </div>
+
+        </div><footer>
+  <div class="container">
+    <p class="credits copyright theme-by">
+	<a href="/">Home</a> -
+      <a href="/tags/calculus">Calculus</a> -
+      <a href="/tags/geometry">Geometry</a>
+      <br/>
+      <a href="https://drummond.nyc/about">Owen Drummond</a>
+      &copy;
+      2023
+    </p>
+  </div>
+</footer></body>
+</html>

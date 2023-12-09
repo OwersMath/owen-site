@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8" />
+
+  <title>Basel Problem - Owen&#39;s Math Portal</title>
+
+<link rel="icon" href="https://drummond.nyc/favicon.png" type="image/png">
+
+  <meta name="description" content="Owen Drummond&#39;s mathematics portal." />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="https://drummond.nyc/css/latex.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/main.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta name="generator" content="Hugo 0.120.1"><body>
+
+
+
+
+
+
+<header>
+  <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+    </ul>
+  </div>
+</nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="post-heading">
+        
+          <h1>Basel Problem</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+<div id="content">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      <div class="postmeta">
+        <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>Mar 30, 2023
+  
+</span>
+      </div>
+      <br>
+      
+    <p>The Basel Problem, named after Leonard Euler&rsquo;s hometown of Basel, Switzerland, is the solution to the infinite series
+
+\(\sum_{n=1}^{\infty} \frac{\pi^2}{6}\)
+
+Euler was the first to publish his solution one year after having solved this problem in 1734. Since Euler&rsquo;s solution, many alternative proofs have been offered, using complex analysis, symmetric polynomials, and so on. These alternative proofs are more rigorous than Euler&rsquo;s liberal use of infinite polyomial tails, but Euler&rsquo;s solution is perhaps the most elegant. This is the outline of the proof.</p>
+<h3 id="definition-of-sinx-using-infinite-products">Definition of sin(x) using infinite products</h3>
+<p>We can construct a definition of
+
+\(f(x)=\sin(x)\)
+ given that
+
+\(f\)
+
+has infinitely many roots:
+$$
+\sin(x)=x(1-\frac{x}{\pi})(1+\frac{x}{\pi})(1-\frac{x}{2\pi})(1+\frac{x}{2\pi})\cdots=x(1-\frac{x^2}{\pi^2})(1-\frac{x^2}{2^2\pi^2})\cdots=x\prod_{k=1}^{\infty} (1-\frac{x^2}{k^2\pi^2})
+$$
+So we have
+$$
+\sin(x)=x\prod_{k=1}^{\infty} (1-\frac{x^2}{k^2\pi^2})
+$$</p>
+<h3 id="constructing-hahahugoshortcode6s3hbhb-from-hahahugoshortcode6s4hbhb">Constructing  \(\sin_{n}(x)\)  from  \(\sin_{3}(x)\) </h3>
+<p>Let
+
+\(\sin_{n}(x)\)
+
+denote the number of products n we take from our definition of
+
+\(\sin(x)\)
+
+above. We have
+$$
+\sin_{3}(x)=x(1-\frac{x^2}{\pi^2})(1-\frac{x^2}{2^2\pi^2})(1-\frac{x^2}{3^2\pi^2})
+$$
+Which can be written as
+$$
+\sin_{3}(x)=x(1-O(x^4)-\frac{x^2}{\pi^2}-\frac{x^2}{{2^2\pi}^2}-\frac{x^2}{{3^2\pi}^2}).
+$$</p>
+<p>We can disregard all of the polynomial terms degree 4 or greater, so we can write
+$$
+\sin_{3}(x)=x(T-\frac{x^2}{\pi^2}-\frac{x^2}{{2^2\pi}^2}-\frac{x^2}{{3^2\pi}^2})=(T-\frac{x^3}{\pi^2}-\frac{x^3}{{2^2\pi}^2}-\frac{x^3}{{3^2\pi}^2}).
+$$
+where T is some polynomial tail. More generally, we can construct
+
+\(\sin_{n}(x)\)
+
+from our definition of
+
+\(\sin_{3}(x)\)
+
+:
+$$
+\sin_{n}(x)=T-x^3\sum_{n=1}^{\infty} \frac{1}{n^2\pi^2}.
+$$</p>
+<h3 id="taylor-series-for-sinx">Taylor Series for sin(x)</h3>
+<p>For now, we will denote
+
+\(\sin_{t}(x)\)
+
+as the Taylor Series expansion of
+
+\(\sin(x)\)
+
+. We know
+$$
+\sin(x)=\sin_{t}(x)=\sum_{n=1}^{\infty} (-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!}
+$$
+Expanding this, we have
+$$
+\sin_{t}(x)=x-\frac{x^3}{3!}+\frac{x^5}{5!}-&hellip;
+$$
+We will disregard all of the polynomial terms except those with degree 3, so we have
+$$
+\sin_{t}(x)=T-\frac{x^3}{3!}
+$$
+where T is some polynomial tail.</p>
+<h3 id="comparison-of-coefficients-and-completion-of-the-proof">Comparison of coefficients and completion of the proof</h3>
+<p>So far we have
+
+\(\sin_{n}(x)\)
+
+, which is one expression for
+
+\(\sin(x)\)
+
+, and
+
+\(\sin_{t}(x)\)
+
+, which is another expression for
+
+\(\sin(x)\)
+
+. Therefore,
+$$
+\sin(x)=\sin_{n}(x)=\sin_{t}(x)
+$$
+So, equating
+
+\(\sin_{n}(x)\)
+
+and
+
+\(\sin_{t}(x)\)
+
+, we have
+$$
+\sin_{n}(x)=T-x^3\sum_{n=1}^{\infty} \frac{1}{n^2\pi^2}=T-\frac{x^3}{3!}= \sin_{t}(x)
+$$
+Since T is the same polynomial tail for both expressions, we can subtract by T on both sides:
+$$
+x^3\sum_{n=1}^{\infty} \frac{1}{n^2\pi^2}=\frac{x^3}{6}
+$$
+Dividing by
+
+\(x^3\)
+
+, we have
+$$
+\sum_{n=1}^{\infty} \frac{1}{n^2\pi^2}=\frac{1}{6}
+$$
+Finally, multiplying by
+
+\(\pi^2\)
+
+on both sides yields
+$$
+\sum_{n=1}^{\infty} \frac{1}{n^2}=\frac{\pi^2}{6}
+$$</p>
+
+
+
+      
+    </article>
+    
+  </div>
+
+        </div><footer>
+  <div class="container">
+    <p class="credits copyright theme-by">
+	<a href="/">Home</a> -
+      <a href="/tags/calculus">Calculus</a> -
+      <a href="/tags/geometry">Geometry</a>
+      <br/>
+      <a href="https://drummond.nyc/about">Owen Drummond</a>
+      &copy;
+      2023
+    </p>
+  </div>
+</footer></body>
+</html>

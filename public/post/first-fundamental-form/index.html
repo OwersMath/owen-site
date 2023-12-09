@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8" />
+
+  <title>First Fundamental Form - Owen&#39;s Math Portal</title>
+
+<link rel="icon" href="https://drummond.nyc/favicon.png" type="image/png">
+
+  <meta name="description" content="Owen Drummond&#39;s mathematics portal." />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="https://drummond.nyc/css/latex.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/main.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta name="generator" content="Hugo 0.120.1"><body>
+
+
+
+
+
+
+<header>
+  <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+    </ul>
+  </div>
+</nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="post-heading">
+        
+          <h1>First Fundamental Form</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+<div id="content">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      <div class="postmeta">
+        <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>May 4, 2023
+  
+</span>
+      </div>
+      <br>
+      
+    <p>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by
+
+\(u=u(t)\)
+
+and
+
+\(v=v(t)\)
+
+which lies on a surface
+
+\(X\)
+
+parametrized by
+
+\(X=X(u,v)\)
+
+we have that</p>
+<p>$$
+ds = |\frac{dX}{dt}| dt = |X_u \frac{du}{dt} + X_v \frac{dv}{dt}| dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})}
+$$</p>
+<p>Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</p>
+<p>$$
+E=X_u \cdot X_u, F=X_u \cdot X_v, G=X_v \cdot X_v
+$$</p>
+<p>and moreover,</p>
+<p>$$
+\sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})} = \sqrt{Edu^2 + 2F du dv + Gdv^2}
+$$</p>
+<p>by direct computation. Now the <strong>First Fundamental Form</strong>, denoted I, is defined as</p>
+<p>$$
+I=ds^2=dX \cdot dX = Edu^2 + 2F du dv + Gdv^2
+$$</p>
+<p>This quadratic form allows us to derive the curvature and metric properties of any surface, namely arc length and area. We see that</p>
+<p>$$
+(X_{u} \times X_{v})^2=(X_{u} \times X_{v}) \cdot (X_{u} \times X_{v}) = (X_{u} \cdot X_{u})(X_{v} \cdot X_{v})-(X_{u} \cdot X_{v})^2=EG - F^2 \geq 0
+$$</p>
+<p>and because
+
+\(E>0\)
+
+we have that I is positive definite, i.e.
+
+\(I \geq 0\)
+
+and
+
+\(I=0 \iff du=dv=0\)
+
+It is worth nothing that I also has the symmetric matrix representation</p>
+<p>$$
+I=x^T
+\begin{bmatrix}
+E &amp; F \\
+F &amp; G
+\end{bmatrix}
+y
+$$</p>
+<p>where
+
+\(x,y\)
+
+are vectors.</p>
+<h2 id="example-1-arc-length-of-a-line-on-a-paraboloid">Example 1: Arc Length of a Line on a Paraboloid</h2>
+<p><img src="FFFex1.png" alt="Paraboloid"></p>
+<p>Let
+
+\(u(t)=t\)
+
+and
+
+\(v(t)=t\)
+
+be the equation of a line which lies on the paraboloid parametrized by</p>
+<p>$$
+X(u,v) = (u,v,u^2+v^2)
+$$</p>
+<p>and let
+
+\(0 \geq t \geq 1\)
+
+and
+
+\(0 \geq u,v \geq 1\)
+</p>
+<p>We will use the first fundamental form to evaluate this arc length. First we see that</p>
+<p>$$
+E=X_u \cdot X_u = 1+4u^2 ,
+F=X_u \cdot X_v = 4uv ,
+G=X_v \cdot X_v = 1+4v^2
+$$</p>
+<p>substituting
+
+\(u(t)\)
+
+and
+
+\(v(t)\)
+
+in, we have that
+$$
+E= 1+4t^2 ,
+F= 4t^2 ,
+G= 1+4t^2
+$$
+Now, we have our equation</p>
+<p>$$
+ds=\sqrt{Edu^2 + 2F du dv + Gdv^2} dt=\sqrt{E \dot{u}^2 + 2F \dot{u} \dot{v} + G \dot{v}^2} dt = \sqrt{2+16t^2} dt= 4 \sqrt{\frac{1}{8} + t^2} dt
+$$
+Finally, we have that our arc length is given by
+$$
+\ell = \int_{0}^{1} ds = 4 \int_{0}^{1} \sqrt{\frac{1}{8} + t^2} dt
+$$
+This is quite a difficult integral, which is usually the case when computing arc length, but we do obtain an analytical antiderivative, so our definite integral has the solution
+$$
+\ell = 4 (\frac{t}{8} \sqrt{16t^2} + \frac{1}{16} ln (\sqrt{8t^2+1}+2\sqrt{2}t) |_{0}^{1}) = \frac{1}{2} (3\sqrt{2}+\frac{1}{2} ln(2+2 \sqrt{2})) \approx 2.562
+$$</p>
+<h2 id="example-2-area-of-a-region-on-a-surface">Example 2: Area of a Region on a Surface</h2>
+<p><img src="areap.svg" alt="Area of a Parallelogram"></p>
+<p>Here, we can utilize the First Fundamental Form to compute a given region on a surface. Note that for the area of a small parallelogram with verticies
+
+\(X(u_0,v_0) , X(u_0, \delta v + v_0), X(\delta u + u_0, v_0), X(\delta u + u_0, \delta v + v_0)\)
+
+we can compute the area of this parallelogram using the cross product:
+$$
+\delta A = |X_u \delta u \times X_v \delta v| = \sqrt{EG - F^2} \delta u \delta v \implies dA = \sqrt{EG - F^2} du dv
+$$
+Now let us look at an example using the same paraboloid parametrization we used in Example one, but let
+
+\(-1 \leq u,v \leq 1\)
+
+and let
+
+\(u^2+v^2=1\)
+
+be a circle on the paraboloid. Our first fundamental form coefficients are the same, so we have that
+$$
+dA=\sqrt{EG - F^2} du dv= \sqrt{(1+4u^2)(1+4v^2)-(4uv)^2} du dv =\sqrt{1+4u^2+4v^2} du dv
+$$
+Thus, letting
+
+\(D=\{(u_0,v_0) : u_0^2+v_0^2 = 1\}\)
+
+we have that
+$$
+A_{S} = \int_{D} dA = \int_{D} \sqrt{1+4u^2+4v^2} du dv
+$$
+Performing a change to polar coordinates with
+
+\(u=r\cos\theta\)
+
+and
+
+\(v=r\sin\theta\)
+
+and integrating the full unit circle with radius 1, we have that
+$$
+A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4(r\cos\theta)^2+4(r\sin\theta)^2} r dr d\theta = \int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta
+$$
+Now using substitution with
+
+\(p=1+4r^2\)
+
+we have that
+
+\(\frac{dp}{8}=r dr\)
+
+and thus
+$$
+A_{S}=\int_{0}^{2\pi} \int_{0}^{1} \sqrt{1+4r^2} r dr d\theta = \int_{0}^{2\pi} \int_{1}^{5} \frac{\sqrt{p}}{8} dp d\theta = \int_{0}^{2\pi} \frac{x^{3/2}}{12}|_{1}^{5}  d\theta = \int_{0}^{2\pi}  \frac{5^{3/2}-1}{12} d\theta = \frac{\pi (5^{3/2}-1)}{6} \approx 5.3304
+$$</p>
+
+
+
+      
+        <div class="blog-tags">
+          
+          <a href="https://drummond.nyc/tags/geometry/">Geometry</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+  </div>
+
+        </div><footer>
+  <div class="container">
+    <p class="credits copyright theme-by">
+	<a href="/">Home</a> -
+      <a href="/tags/calculus">Calculus</a> -
+      <a href="/tags/geometry">Geometry</a>
+      <br/>
+      <a href="https://drummond.nyc/about">Owen Drummond</a>
+      &copy;
+      2023
+    </p>
+  </div>
+</footer></body>
+</html>

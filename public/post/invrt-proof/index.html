@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8" />
+
+  <title>The Space of Invertible Matricies is Dense in the Space of All Matricies - Owen&#39;s Math Portal</title>
+
+<link rel="icon" href="https://drummond.nyc/favicon.png" type="image/png">
+
+  <meta name="description" content="Owen Drummond&#39;s mathematics portal." />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="https://drummond.nyc/css/latex.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/main.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta name="generator" content="Hugo 0.120.1"><body>
+
+
+
+
+
+
+<header>
+  <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+    </ul>
+  </div>
+</nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="post-heading">
+        
+          <h1>The Space of Invertible Matricies is Dense in the Space of All Matricies</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+<div id="content">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      <div class="postmeta">
+        <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>May 27, 2023
+  
+</span>
+      </div>
+      <br>
+      
+    <p>To prove that the space of all invetible matricies is dense in the space of all matricies, it will suffice to show that the space of all invertible matricies is dense the space of matricies with distinct eigenvalues, as the space of matricies with distinct eigenvalues is dense in the space of all matricies. Denote
+ \(E(n, \mathbb{R}) \) 
+as the space of matricies with n distinct eigenvalues. Formally,
+$$
+E(n, ℝ) = { \begin{bmatrix}
+a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots    \\
+a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn} \\
+\end{bmatrix} : a_{ij} \in ℝ, \hspace{0.25cm} \textnormal{and} \hspace{0.25cm} \lambda_{1}, \lambda_{2}, &hellip; \lambda_{n} \hspace{0.25cm} \textnormal{all distinct eigenvalues} }
+$$
+Now, by Schuer&rsquo;s Theorem, we have that  \(\exists \)  a unitary matrix U and upper triangular matrix D such that for any  \(E_0 \in E(n,\mathbb{R}) \)  we have that  \(E_0 = UDU^{-1}  \) , where
+$$
+D = \begin{bmatrix}
+\alpha_{1} &amp; c_{12} &amp; \cdots &amp; c_{1n} \\
+0 &amp; \alpha_{2} &amp; &hellip; &amp; c_{2n} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots    \\
+0 &amp; \cdots &amp; \cdots &amp; \alpha_{n} \\ \end{bmatrix}
+$$
+and  \(\alpha_{1}, ..., \alpha_{n} \)  are the distinct eigenvalues of  \(E_{0} \)  and  \(c_{ij} \in \mathbb{R} \) . Now for each n,  \(\exists \epsilon_{1}^m, \epsilon_{2}^m, ..., \epsilon_{n}^m \)  such that  \(\epsilon_{i}^{m} \rightarrow 0 \)  as  \(m \rightarrow \infty \)  and  \(\alpha_{i}^{m} = \alpha_{i} + \epsilon_{i}^{m} \neq 0 \)  for  \(1 \leq i \leq n \)  and all  \(\alpha_{i}^{m} \)  are distinct. Set
+$$
+D^m = \begin{bmatrix}
+\alpha_{1}^{m} &amp; \tilde{c_{12}} &amp; \cdots &amp; \tilde{c_{1n}} \\
+0 &amp; \alpha_{2}^{m} &amp; &hellip; &amp; \tilde{c_{2n}} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots    \\
+0 &amp; \cdots &amp; \cdots &amp; \alpha_{n}^{m} \\ \end{bmatrix}
+$$
+and  \(A^m=UD^{m}U^{*} \) . Because  \(A^m \)  is constructed in such a way that  \(\alpha_{1}^{m}, ..., \alpha_{n}^{m} \)  are the eigenvalues of  \(A^m \) ,  \(A^m \)  has n distinct non-zero eigenvalues, and thus  \(A^m \)  is invertible. Finally,
+$$
+A-A^m=UDU^{\ast}-UD^{m}U^{\ast}=U(D-D^{m})U^{\ast} \implies ||A-A^m|| \leq ||U|| \hspace{0.12cm} ||D-D^m|| \hspace{0.12cm} ||U^{\ast}|| = ||D-D^{m}|| \rightarrow 0 \hspace{0.25cm} \textnormal{as} \hspace{0.25cm} m \rightarrow \infty
+$$
+Thus, the spaces of all  \(n \times n \)  invertible matricies is dense in  \(E(n, \mathbb{R}) \) , which suffices to show that the space of all  \(n \times n \)  matricies is dense in   \(M(n, \mathbb{R}) \) , the space of all  \(n \times n \)  matricies since  \(E(n, \mathbb{R}) \)  is dense in  \(M(n, \mathbb{R}) \) .</p>
+
+
+
+      
+    </article>
+    
+  </div>
+
+        </div><footer>
+  <div class="container">
+    <p class="credits copyright theme-by">
+	<a href="/">Home</a> -
+      <a href="/tags/calculus">Calculus</a> -
+      <a href="/tags/geometry">Geometry</a>
+      <br/>
+      <a href="https://drummond.nyc/about">Owen Drummond</a>
+      &copy;
+      2023
+    </p>
+  </div>
+</footer></body>
+</html>
