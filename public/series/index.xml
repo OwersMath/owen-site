@@ -5,6 +5,7 @@
     <link>https://drummond.nyc/series/</link>
     <description>Recent content in Series on Owen&#39;s Math Portal</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://drummond.nyc/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://drummond.nyc/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
