@@ -25,6 +25,6 @@ footnoteReturnLinkContents = "^"
 
 [Params]
   darkmode = false
-  twittercard = true
-  opengraph = true
+  twittercard = false
+  opengraph = false
   description = "Owen Drummond's mathematics portal."
