@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://drummond.nyc/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/calculus/</loc>
+    <loc>https://drummond.nyc/tags/calculus/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/index/</loc>
+    <loc>https://drummond.nyc/tags/index/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://drummond.nyc/post/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://drummond.nyc/tags/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/cosint/</loc>
+    <loc>https://drummond.nyc/post/cosint/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/dirichlet/</loc>
+    <loc>https://drummond.nyc/post/dirichlet/</loc>
     <lastmod>2023-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/7-2-int/</loc>
+    <loc>https://drummond.nyc/post/7-2-int/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/invrt-proof/</loc>
+    <loc>https://drummond.nyc/post/invrt-proof/</loc>
     <lastmod>2023-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/first-fundamental-form/</loc>
+    <loc>https://drummond.nyc/post/first-fundamental-form/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/geometry/</loc>
+    <loc>https://drummond.nyc/tags/geometry/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/evaluating-the-gaussian-integral/</loc>
+    <loc>https://drummond.nyc/post/evaluating-the-gaussian-integral/</loc>
     <lastmod>2023-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/orthonormal-vectors-are-linearly-independent/</loc>
+    <loc>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/a-fascinating-integral/</loc>
+    <loc>https://drummond.nyc/post/a-fascinating-integral/</loc>
     <lastmod>2023-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://drummond.nyc/about/</loc>
     <lastmod>2023-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/basel-problem/</loc>
+    <loc>https://drummond.nyc/post/basel-problem/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://drummond.nyc/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://drummond.nyc/series/</loc>
   </url>
 </urlset>

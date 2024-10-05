@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Owen&#39;s Math Portal</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://drummond.nyc/post/</link>
     <description>Recent content in Posts on Owen&#39;s Math Portal</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://drummond.nyc/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Most Beautiful Result in Calculus</title>
-      <link>http://localhost:1313/post/cosint/</link>
+      <link>https://drummond.nyc/post/cosint/</link>
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/cosint/</guid>
+      <guid>https://drummond.nyc/post/cosint/</guid>
       <description>Today, we will evaluate the integral $$ \int_{-\infty}^{\infty} \frac{\cos(x)}{x^2+1} dx $$ using Cauchy&amp;rsquo;s Residue Theorem and contour integration. This is one of the most beautiful results in all of calculus, and the solution is rather elegant. To begin, let us define the following function in \(\mathbb{C}\)&#xD;: $$ f(z)=\frac{e^{iz}}{z^2+1} $$ and let us use the canonical contour, that is, the top half of a semicircle in the complex plane. Let us define this contour as \(C\)&#xD;, with radius \(R\)&#xD;.</description>
     </item>
     <item>
       <title>Dirichlet Integral - Two Ways</title>
-      <link>http://localhost:1313/post/dirichlet/</link>
+      <link>https://drummond.nyc/post/dirichlet/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/dirichlet/</guid>
+      <guid>https://drummond.nyc/post/dirichlet/</guid>
       <description>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as $$ \int_{0}^{\infty} \frac{\sin(x)}{x} dx $$&#xA;Feynman Integration We employ Feynman&amp;rsquo;s Integration trick here by first defining the function $$ I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx $$&#xA;and notice that because \(|\frac{\sin(x)}{x}| \leq 1 \)&#xD;$$ \lim_{\alpha \rightarrow \infty} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha} $$&#xA;so \(I(\alpha) \)&#xD;vanishes as \(\alpha \rightarrow \infty \)&#xD;and thus we can continue with Fenyman&amp;rsquo;s technique: $$ \frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx $$ now by integration by parts, we have that $$ -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx $$</description>
     </item>
     <item>
       <title>Integral of the Day - 7/2/2023</title>
-      <link>http://localhost:1313/post/7-2-int/</link>
+      <link>https://drummond.nyc/post/7-2-int/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/7-2-int/</guid>
+      <guid>https://drummond.nyc/post/7-2-int/</guid>
       <description>Today, we will be evaluating the integral $$ \int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R} $$ The restriction of \(a\)&#xD;to \(\mathbb{R^{-}}\)&#xD;is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely, \(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\)&#xD;. To do this, we complete the square on \(f(x)=ax^2+bx+c\)&#xD;: $$ y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x $$ Further, $$ \frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2} $$ Lastly, $$ y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c $$ Thus we have that $$ I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx $$ Given that this integrand spans all of \(\mathbb{R}\)&#xD;we can employ the substitution \(t=x+\frac{b}{2a}\)&#xD;and our bounds will remain the same.</description>
     </item>
     <item>
       <title>The Space of Invertible Matricies is Dense in the Space of All Matricies</title>
-      <link>http://localhost:1313/post/invrt-proof/</link>
+      <link>https://drummond.nyc/post/invrt-proof/</link>
       <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/invrt-proof/</guid>
+      <guid>https://drummond.nyc/post/invrt-proof/</guid>
       <description>To prove that the space of all invetible matricies is dense in the space of all matricies, it will suffice to show that the space of all invertible matricies is dense the space of matricies with distinct eigenvalues, as the space of matricies with distinct eigenvalues is dense in the space of all matricies. Denote \(E(n, \mathbb{R}) \) as the space of matricies with n distinct eigenvalues. Formally, $$ E(n, ℝ) = { \begin{bmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n} \\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n} \\ \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\ a_{n1} &amp;amp; a_{n2} &amp;amp; \cdots &amp;amp; a_{nn} \\ \end{bmatrix} : a_{ij} \in ℝ, \hspace{0.</description>
     </item>
     <item>
       <title>First Fundamental Form</title>
-      <link>http://localhost:1313/post/first-fundamental-form/</link>
+      <link>https://drummond.nyc/post/first-fundamental-form/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/first-fundamental-form/</guid>
+      <guid>https://drummond.nyc/post/first-fundamental-form/</guid>
       <description>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by \(u=u(t)\)&#xD;and \(v=v(t)\)&#xD;which lies on a surface \(X\)&#xD;parametrized by \(X=X(u,v)\)&#xD;we have that&#xA;$$ ds = |\frac{dX}{dt}| dt = |X_u \frac{du}{dt} + X_v \frac{dv}{dt}| dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})} $$&#xA;Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</description>
     </item>
     <item>
       <title>Evaluating the Gaussian Integral</title>
-      <link>http://localhost:1313/post/evaluating-the-gaussian-integral/</link>
+      <link>https://drummond.nyc/post/evaluating-the-gaussian-integral/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/evaluating-the-gaussian-integral/</guid>
+      <guid>https://drummond.nyc/post/evaluating-the-gaussian-integral/</guid>
       <description>The Gaussian Integral is given by $$ \int_{-\infty}^{\infty} e^{-x^2} dx $$ This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\)&#xD;we have that $$ I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx $$ From here, we will preform a change into polar coordinates, with \((x,y) \rightarrow (t, \theta)\)&#xD;and \(x=r\cos\theta\)&#xD;, \(y=r\sin\theta\)&#xD;.</description>
     </item>
     <item>
       <title>Orthonormal Vectors are Linearly Independent</title>
-      <link>http://localhost:1313/post/orthonormal-vectors-are-linearly-independent/</link>
+      <link>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/orthonormal-vectors-are-linearly-independent/</guid>
+      <guid>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</guid>
       <description>For a set of orthonormal vectors \((v_1,v_2,...,v_m)\)&#xD;in an m-dimensional vector space , and set of constants \(r_1,r_2,...r_m \in \mathbb{R}\)&#xD;, if we consider the equation \(r_1v_1+r_2v_2+...+r_mv_m=0\)&#xD;with the objective of demonstrating that the vectors in \((v_1,v_2,...,v_m)\)&#xD;are linearly independent, then we must show that \(r_1=r_2=...=r_m=0\)&#xD;. If we take the inner product on both sides of the equation , we have that&#xA;$$ &amp;lt;r_1v_1+r_2v_2+&amp;hellip;+r_mv_m, v_1&amp;gt; = &amp;lt;0,v_1&amp;gt; $$&#xA;Using the properties of inner products, we have that</description>
     </item>
     <item>
       <title>A Fascinating Integral</title>
-      <link>http://localhost:1313/post/a-fascinating-integral/</link>
+      <link>https://drummond.nyc/post/a-fascinating-integral/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/a-fascinating-integral/</guid>
+      <guid>https://drummond.nyc/post/a-fascinating-integral/</guid>
       <description>We will evalute the integral \(\int_0^1 \frac{\ln(x)}{1+x} dx \)&#xD;using Taylor Series expansion and switching the order of integration and summation.&#xA;Firstly, we notice that $$ \frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n $$&#xA;by taylor series expansion. This series coverges for \(x \in (0,1)\)&#xD;so we can substitute this into the integral:&#xA;$$ \int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx $$&#xA;Further, by changing the order of integration and summation, we have $$ \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx $$</description>
     </item>
     <item>
       <title>Basel Problem</title>
-      <link>http://localhost:1313/post/basel-problem/</link>
+      <link>https://drummond.nyc/post/basel-problem/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/basel-problem/</guid>
+      <guid>https://drummond.nyc/post/basel-problem/</guid>
       <description>The Basel Problem, named after Leonard Euler&amp;rsquo;s hometown of Basel, Switzerland, is the solution to the infinite series \(\sum_{n=1}^{\infty} \frac{\pi^2}{6}\)&#xD;Euler was the first to publish his solution one year after having solved this problem in 1734. Since Euler&amp;rsquo;s solution, many alternative proofs have been offered, using complex analysis, symmetric polynomials, and so on. These alternative proofs are more rigorous than Euler&amp;rsquo;s liberal use of infinite polyomial tails, but Euler&amp;rsquo;s solution is perhaps the most elegant.</description>
     </item>
   </channel>
