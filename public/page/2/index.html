@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
+<html lang="en"><meta charset="utf-8" />
 
   <title>Owen&#39;s Math Portal</title>
 
-<link rel="icon" href="http://localhost:1313/favicon.png" type="image/png">
+<link rel="icon" href="https://drummond.nyc/favicon.png" type="image/png">
 
   <meta name="description" content="Owen Drummond&#39;s mathematics portal." />
 
@@ -11,10 +11,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Owen's Math Portal" />
-<link rel="stylesheet" href="http://localhost:1313/css/latex.css" />
-<link rel="stylesheet" href="http://localhost:1313/css/main.css" />
-<link rel="stylesheet" href="http://localhost:1313/css/custom.css" />
+<link rel="alternate" type="application/rss+xml" href="https://drummond.nyc/index.xml" title="Owen's Math Portal" />
+<link rel="stylesheet" href="https://drummond.nyc/css/latex.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/main.css" />
+<link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <meta name="generator" content="Hugo 0.140.1"><body class="latex-dark-auto">
@@ -73,7 +73,94 @@
 
       
         <article class="post-preview">
-  <a href="http://localhost:1313/post/invrt-proof/">
+  <a href="https://drummond.nyc/post/7-2-int/">
+      <h2 class="post-title">Integral of the Day - 7/2/2023</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Jul 2, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>Today, we will be evaluating the integral
+$$
+\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R}
+$$
+The restriction of
+
+\(a\)
+
+to
+
+\(\mathbb{R^{-}}\)
+
+is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely,
+
+\(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\)
+
+. To do this, we complete the square on
+
+\(f(x)=ax^2+bx+c\)
+
+:
+$$
+y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x
+$$
+Further,
+$$
+\frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2}
+$$
+Lastly,
+$$
+y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c
+$$
+Thus we have that
+$$
+I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx
+$$
+Given that this integrand spans all of
+
+\(\mathbb{R}\)
+
+we can employ the substitution
+
+\(t=x+\frac{b}{2a}\)
+
+and our bounds will remain the same. Thus,
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{at^2} dt
+$$
+and since
+
+\(a\)
+
+is negative, we can write
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{-(\sqrt{-a}t)^2} dt
+$$
+Now letting
+
+\(v=\sqrt{-a}t\)
+
+we have that
+
+\(dv=\sqrt{-a} dt \implies \frac{dv}{\sqrt{-a}}=dt\)
+
+and thus
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{-(v)^2} \frac{dv}{\sqrt{-a}} \implies I=\frac{e^{-\frac{b^2}{4a}+c}}{\sqrt{-a}} \sqrt{\pi} = e^{-\frac{b^2}{4a}+c} \sqrt{-\frac{\pi}{a}}
+$$
+and we&rsquo;re done.</p></p>
+        <a href="https://drummond.nyc/post/7-2-int/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/invrt-proof/">
       <h2 class="post-title">The Space of Invertible Matricies is Dense in the Space of All Matricies</h2>
   </a>
   <div class="postmeta">
@@ -117,13 +204,13 @@ $$
 A-A^m=UDU^{\ast}-UD^{m}U^{\ast}=U(D-D^{m})U^{\ast} \implies ||A-A^m|| \leq ||U|| \hspace{0.12cm} ||D-D^m|| \hspace{0.12cm} ||U^{\ast}|| = ||D-D^{m}|| \rightarrow 0 \hspace{0.25cm} \textnormal{as} \hspace{0.25cm} m \rightarrow \infty
 $$
 Thus, the spaces of all  \(n \times n \)  invertible matricies is dense in  \(E(n, \mathbb{R}) \) , which suffices to show that the space of all  \(n \times n \)  matricies is dense in   \(M(n, \mathbb{R}) \) , the space of all  \(n \times n \)  matricies since  \(E(n, \mathbb{R}) \)  is dense in  \(M(n, \mathbb{R}) \) .</p></p>
-        <a href="http://localhost:1313/post/invrt-proof/" class="post-read-more">Read More</a>
+        <a href="https://drummond.nyc/post/invrt-proof/" class="post-read-more">Read More</a>
     
   </div>
 </article>
       
         <article class="post-preview">
-  <a href="http://localhost:1313/post/first-fundamental-form/">
+  <a href="https://drummond.nyc/post/first-fundamental-form/">
       <h2 class="post-title">First Fundamental Form</h2>
   </a>
   <div class="postmeta">
@@ -156,74 +243,7 @@ we have that</p>
 ds = |\frac{dX}{dt}| dt = |X_u \frac{du}{dt} + X_v \frac{dv}{dt}| dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})}
 $$</p>
 <p>Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</p></p>
-        <a href="http://localhost:1313/post/first-fundamental-form/" class="post-read-more">Read More</a>
-    
-  </div>
-</article>
-      
-        <article class="post-preview">
-  <a href="http://localhost:1313/post/evaluating-the-gaussian-integral/">
-      <h2 class="post-title">Evaluating the Gaussian Integral</h2>
-  </a>
-  <div class="postmeta">
-    <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>
-  Apr 25, 2023
-  
-</span>
-  </div>
-  <div class="post-entry">
-    
-      <p><p>The Gaussian Integral is given by
-$$
-\int_{-\infty}^{\infty} e^{-x^2} dx
-$$
-This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define
-
-\(I=\int_{-\infty}^{\infty} e^{-x^2} dx\)
-
-we have that
-$$
-I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx
-$$
-From here, we will preform a change into polar coordinates, with
-
-\((x,y) \rightarrow (t, \theta)\)
-
-and
-
-\(x=r\cos\theta\)
-
-,
-
-\(y=r\sin\theta\)
-
-. From this, since
-
-\(r^2=x^2+y^2\)
-
-,
-
-\(r \in (0,\infty)\)
-
-and
-
-\(\theta \in (0, 2\pi)\)
-
-we have that our integral is now
-$$
-I^2=\int_{0}^{\infty} \int_{0}^{2\pi} re^{-r^2} d\theta dr
-$$
-after this change of coordinates. By Fubini&rsquo;s theorem, we have that
-$$
-I^2=\int_{0}^{\infty} \int_{0}^{2\pi} re^{-r^2} d\theta dr = \int_{0}^{2\pi} d\theta \int_{0}^{\infty} re^{-r^2} dr = 2\pi \int_{0}^{\infty} re^{-r^2} dr
-$$
-Now evaulating this integral of one dimension with the substitution
-$$
-t=r^2 \implies \sqrt{t}=r \implies dt=2rdr \implies rdr=\frac{dt}{2}
-$$
-we have that</p></p>
-        <a href="http://localhost:1313/post/evaluating-the-gaussian-integral/" class="post-read-more">Read More</a>
+        <a href="https://drummond.nyc/post/first-fundamental-form/" class="post-read-more">Read More</a>
     
   </div>
 </article>
@@ -233,12 +253,12 @@ we have that</p></p>
     <ul class="pager">
       
         <li class="previous">
-          <a href="http://localhost:1313/page/1/">&larr; Newer</a>
+          <a href="https://drummond.nyc/page/1/">&larr; Newer</a>
         </li>
       
       
         <li class="next">
-          <a href="http://localhost:1313/page/3/">Older &rarr;</a>
+          <a href="https://drummond.nyc/page/3/">Older &rarr;</a>
         </li>
       
     </ul>
@@ -253,9 +273,9 @@ we have that</p></p>
       <a href="/tags/calculus">Calculus</a> -
       <a href="/tags/geometry">Geometry</a>
       <br/>
-      <a href="http://localhost:1313/about"></a>
+      <a href="https://drummond.nyc/about"></a>
       &copy;
-      2023
+      2024
     </p>
   </div>
 </footer></body>

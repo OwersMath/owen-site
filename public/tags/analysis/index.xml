@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis on Owen&#39;s Math Portal</title>
+    <link>https://drummond.nyc/tags/analysis/</link>
+    <description>Recent content in Analysis on Owen&#39;s Math Portal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://drummond.nyc/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Collection of Exercises from Real Analysis II</title>
+      <link>https://drummond.nyc/post/real-analysis-ex/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://drummond.nyc/post/real-analysis-ex/</guid>
+      <description>&lt;p&gt;The following exercises are an assortment of homework problems from &lt;em&gt;MATH 502 - Theory&#xA;of Functions of a Real Variable II&lt;/em&gt; with Professor Dennis Kriventsov at Rutgers University.&#xA;Topics include Radon Measures, weak convergence, Haar measures, Fourier analysis, PDEs,&#xA;distributions, and probability theory.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
