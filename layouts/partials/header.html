@@ -1,0 +1,47 @@
+
+{{ if .IsHome }}
+{{ if .Site.Params.homeTitle }}
+  {{ $.Scratch.Set "title" .Site.Params.homeTitle }}
+{{ else }}
+  {{ $.Scratch.Set "title" .Site.Title }}
+{{ end }}
+{{ else }}
+{{ $.Scratch.Set "title" .Title }}
+{{ end }}
+
+{{ $title := $.Scratch.Get "title" }}
+{{ if $title }}
+<header>
+  {{ partial "nav.html" . }}
+  <div class="intro-header">
+    <div class="container">
+      <div class="{{ .Type }}-heading">
+        {{ if eq .Type "list" }}
+          <h1 style="margin-bottom: 0px;">{{ if .Data.Singular }}#{{ end }}{{ .Title }}</h1>
+        {{ else }}
+          <h1 style="margin-bottom: 0px;">{{ with $title }}{{.}}{{ else }}<br/>{{ end }}</h1>
+          {{ if .IsHome }}
+            <p class="author" style="margin-bottom: 0px">{{ with .Site.Params.Author.name }}{{.}}{{ else }}<br/>{{ end }}</p>
+            <div style="font-size: small; text-align: center; margin: auto; width: max-content;">
+              <p style="margin-top: 0px;">
+                <a href="https://arxiv.org/search/?searchtype=author&query=Drummond%2C+O">ArXiv</a> -
+                <a href="https://x.com/drummondnyc">X</a>
+              </p>
+            </div>
+            {{ if .Site.Params.Author.abstract }}
+              <div class="abstract" style="margin-top: 0px;">
+                <h5 style="margin-top: 1rem;">Abstract</h5>
+                <p>
+                  {{ .Site.Params.Author.abstract }}
+                </p>
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</header>
+{{ else }}
+<div class="intro-header"></div>
+{{ end }}

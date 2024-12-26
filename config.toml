@@ -1,15 +1,19 @@
 baseURL = "https://drummond.nyc/"
 title = "Owen's Math Portal"
 theme = "hugotex"
-paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
-[author]
+[pagination]
+  pagerSize = 3
+
+[Params.author]
   name = "Owen Drummond"
-  abstract = "I am a graduate mathematics student at Rutgers University New Brunswick. The grass withers and the flower fades, but the word of our God abides forever - Isaiah 40:8"
+  abstract = """
+    I am a graduate mathematics student at Rutgers University New Brunswick.
+    """
 
 [taxonomies]
   category = "categories"

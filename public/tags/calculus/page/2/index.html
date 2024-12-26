@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8" />
+<html lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
 
   <title>Calculus - Owen&#39;s Math Portal</title>
 
-<link rel="icon" href="https://drummond.nyc/favicon.png" type="image/png">
+<link rel="icon" href="http://localhost:1313/favicon.png" type="image/png">
 
   <meta name="description" content="Owen Drummond&#39;s mathematics portal." />
 
@@ -11,13 +11,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://drummond.nyc/tags/calculus/index.xml" title="Owen's Math Portal" />
-<link rel="stylesheet" href="https://drummond.nyc/css/latex.css" />
-<link rel="stylesheet" href="https://drummond.nyc/css/main.css" />
-<link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/calculus/index.xml" title="Owen's Math Portal" />
+<link rel="stylesheet" href="http://localhost:1313/css/latex.css" />
+<link rel="stylesheet" href="http://localhost:1313/css/main.css" />
+<link rel="stylesheet" href="http://localhost:1313/css/custom.css" />
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<meta name="generator" content="Hugo 0.127.0"><body>
+<meta name="generator" content="Hugo 0.140.1"><body class="latex-dark-auto">
 
 
 
@@ -54,41 +54,107 @@
 
       
         <article class="post-preview">
-  <a href="https://drummond.nyc/post/evaluating-the-gaussian-integral/">
+  <a href="http://localhost:1313/post/evaluating-the-gaussian-integral/">
       <h2 class="post-title">Evaluating the Gaussian Integral</h2>
   </a>
   <div class="postmeta">
     <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>Apr 25, 2023
+  <i class="fa fa-calendar-alt"></i>
+  Apr 25, 2023
   
 </span>
   </div>
   <div class="post-entry">
     
-      <p>The Gaussian Integral is given by $$ \int_{-\infty}^{\infty} e^{-x^2} dx $$ This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define \(I=\int_{-\infty}^{\infty} e^{-x^2} dx\)we have that $$ I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx $$ From here, we will preform a change into polar coordinates, with \((x,y) \rightarrow (t, \theta)\)and \(x=r\cos\theta\), \(y=r\sin\theta\).</p>
-        <a href="https://drummond.nyc/post/evaluating-the-gaussian-integral/" class="post-read-more">Read More</a>
+      <p><p>The Gaussian Integral is given by
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx
+$$
+This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3. First, if we define
+
+\(I=\int_{-\infty}^{\infty} e^{-x^2} dx\)
+
+we have that
+$$
+I^2=\int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-x^2-y^2} dy dx= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^2+y^2)} dy dx
+$$
+From here, we will preform a change into polar coordinates, with
+
+\((x,y) \rightarrow (t, \theta)\)
+
+and
+
+\(x=r\cos\theta\)
+
+,
+
+\(y=r\sin\theta\)
+
+. From this, since
+
+\(r^2=x^2+y^2\)
+
+,
+
+\(r \in (0,\infty)\)
+
+and
+
+\(\theta \in (0, 2\pi)\)
+
+we have that our integral is now
+$$
+I^2=\int_{0}^{\infty} \int_{0}^{2\pi} re^{-r^2} d\theta dr
+$$
+after this change of coordinates. By Fubini&rsquo;s theorem, we have that
+$$
+I^2=\int_{0}^{\infty} \int_{0}^{2\pi} re^{-r^2} d\theta dr = \int_{0}^{2\pi} d\theta \int_{0}^{\infty} re^{-r^2} dr = 2\pi \int_{0}^{\infty} re^{-r^2} dr
+$$
+Now evaulating this integral of one dimension with the substitution
+$$
+t=r^2 \implies \sqrt{t}=r \implies dt=2rdr \implies rdr=\frac{dt}{2}
+$$
+we have that</p></p>
+        <a href="http://localhost:1313/post/evaluating-the-gaussian-integral/" class="post-read-more">Read More</a>
     
   </div>
 </article>
       
         <article class="post-preview">
-  <a href="https://drummond.nyc/post/a-fascinating-integral/">
+  <a href="http://localhost:1313/post/a-fascinating-integral/">
       <h2 class="post-title">A Fascinating Integral</h2>
   </a>
   <div class="postmeta">
     <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>Apr 10, 2023
+  <i class="fa fa-calendar-alt"></i>
+  Apr 10, 2023
   
 </span>
   </div>
   <div class="post-entry">
     
-      <p>We will evalute the integral \(\int_0^1 \frac{\ln(x)}{1+x} dx \)using Taylor Series expansion and switching the order of integration and summation.
-Firstly, we notice that $$ \frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n $$
-by taylor series expansion. This series coverges for \(x \in (0,1)\)so we can substitute this into the integral:
-$$ \int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx $$
-Further, by changing the order of integration and summation, we have $$ \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx $$</p>
-        <a href="https://drummond.nyc/post/a-fascinating-integral/" class="post-read-more">Read More</a>
+      <p><p>We will evalute the integral
+
+\(\int_0^1 \frac{\ln(x)}{1+x} dx \)
+
+using Taylor Series expansion and switching the order of integration and summation.</p>
+<p>Firstly, we notice that
+$$
+\frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n
+$$</p>
+<p>by taylor series expansion. This series coverges for
+
+\(x \in (0,1)\)
+</p>
+<p>so we can substitute this into the integral:</p>
+<p>$$
+\int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx
+$$</p>
+<p>Further, by changing the order of integration and summation, we have
+$$
+\int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx
+$$</p></p>
+        <a href="http://localhost:1313/post/a-fascinating-integral/" class="post-read-more">Read More</a>
     
   </div>
 </article>
@@ -98,7 +164,7 @@ Further, by changing the order of integration and summation, we have $$ \int_0^1
     <ul class="pager">
       
         <li class="previous">
-          <a href="https://drummond.nyc/tags/calculus/page/1/">&larr; Newer</a>
+          <a href="http://localhost:1313/tags/calculus/page/1/">&larr; Newer</a>
         </li>
       
       
@@ -114,7 +180,7 @@ Further, by changing the order of integration and summation, we have $$ \int_0^1
       <a href="/tags/calculus">Calculus</a> -
       <a href="/tags/geometry">Geometry</a>
       <br/>
-      <a href="https://drummond.nyc/about">Owen Drummond</a>
+      <a href="http://localhost:1313/about"></a>
       &copy;
       2023
     </p>

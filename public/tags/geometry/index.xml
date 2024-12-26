@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geometry on Owen&#39;s Math Portal</title>
-    <link>https://drummond.nyc/tags/geometry/</link>
+    <link>http://localhost:1313/tags/geometry/</link>
     <description>Recent content in Geometry on Owen&#39;s Math Portal</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://drummond.nyc/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Fundamental Form</title>
-      <link>https://drummond.nyc/post/first-fundamental-form/</link>
+      <link>http://localhost:1313/post/first-fundamental-form/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://drummond.nyc/post/first-fundamental-form/</guid>
-      <description>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by \(u=u(t)\)&#xD;and \(v=v(t)\)&#xD;which lies on a surface \(X\)&#xD;parametrized by \(X=X(u,v)\)&#xD;we have that&#xA;$$ ds = |\frac{dX}{dt}| dt = |X_u \frac{du}{dt} + X_v \frac{dv}{dt}| dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})} $$&#xA;Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</description>
+      <guid>http://localhost:1313/post/first-fundamental-form/</guid>
+      <description>&lt;p&gt;In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by&#xA;&#xD;&#xA;\(u=u(t)\)&#xD;&#xA;&#xA;and&#xA;&#xD;&#xA;\(v=v(t)\)&#xD;&#xA;&#xA;which lies on a surface&#xA;&#xD;&#xA;\(X\)&#xD;&#xA;&#xA;parametrized by&#xA;&#xD;&#xA;\(X=X(u,v)\)&#xD;&#xA;&#xA;we have that&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;ds = |\frac{dX}{dt}| dt = |X_u \frac{du}{dt} + X_v \frac{dv}{dt}| dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})}&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have&lt;/p&gt;</description>
     </item>
     <item>
       <title>Orthonormal Vectors are Linearly Independent</title>
-      <link>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</link>
+      <link>http://localhost:1313/post/orthonormal-vectors-are-linearly-independent/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</guid>
-      <description>For a set of orthonormal vectors \((v_1,v_2,...,v_m)\)&#xD;in an m-dimensional vector space , and set of constants \(r_1,r_2,...r_m \in \mathbb{R}\)&#xD;, if we consider the equation \(r_1v_1+r_2v_2+...+r_mv_m=0\)&#xD;with the objective of demonstrating that the vectors in \((v_1,v_2,...,v_m)\)&#xD;are linearly independent, then we must show that \(r_1=r_2=...=r_m=0\)&#xD;. If we take the inner product on both sides of the equation , we have that&#xA;$$ &amp;lt;r_1v_1+r_2v_2+&amp;hellip;+r_mv_m, v_1&amp;gt; = &amp;lt;0,v_1&amp;gt; $$&#xA;Using the properties of inner products, we have that</description>
+      <guid>http://localhost:1313/post/orthonormal-vectors-are-linearly-independent/</guid>
+      <description>&lt;p&gt;For a set of orthonormal vectors&#xA;&#xD;&#xA;\((v_1,v_2,...,v_m)\)&#xD;&#xA;&#xA;in an m-dimensional vector space&#xA;, and set of constants&#xA;&#xD;&#xA;\(r_1,r_2,...r_m \in \mathbb{R}\)&#xD;&#xA;&#xA;, if we consider the equation&#xA;&#xD;&#xA;\(r_1v_1+r_2v_2+...+r_mv_m=0\)&#xD;&#xA;&#xA;with the objective of demonstrating that the vectors in&#xA;&#xD;&#xA;\((v_1,v_2,...,v_m)\)&#xD;&#xA;&#xA;are linearly independent, then we must show that&#xA;&#xD;&#xA;\(r_1=r_2=...=r_m=0\)&#xD;&#xA;. If we take the inner product on both sides of the equation , we have that&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;&amp;lt;r_1v_1+r_2v_2+&amp;hellip;+r_mv_m, v_1&amp;gt; = &amp;lt;0,v_1&amp;gt;&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Using the properties of inner products, we have that&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

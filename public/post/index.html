@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8" />
+<html lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
 
   <title>Posts - Owen&#39;s Math Portal</title>
 
-<link rel="icon" href="https://drummond.nyc/favicon.png" type="image/png">
+<link rel="icon" href="http://localhost:1313/favicon.png" type="image/png">
 
   <meta name="description" content="Owen Drummond&#39;s mathematics portal." />
 
@@ -11,13 +11,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://drummond.nyc/post/index.xml" title="Owen's Math Portal" />
-<link rel="stylesheet" href="https://drummond.nyc/css/latex.css" />
-<link rel="stylesheet" href="https://drummond.nyc/css/main.css" />
-<link rel="stylesheet" href="https://drummond.nyc/css/custom.css" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml" title="Owen's Math Portal" />
+<link rel="stylesheet" href="http://localhost:1313/css/latex.css" />
+<link rel="stylesheet" href="http://localhost:1313/css/main.css" />
+<link rel="stylesheet" href="http://localhost:1313/css/custom.css" />
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<meta name="generator" content="Hugo 0.127.0"><body>
+<meta name="generator" content="Hugo 0.140.1"><body class="latex-dark-auto">
 
 
 
@@ -54,58 +54,194 @@
 
       
         <article class="post-preview">
-  <a href="https://drummond.nyc/post/cosint/">
+  <a href="http://localhost:1313/post/cosint/">
       <h2 class="post-title">The Most Beautiful Result in Calculus</h2>
   </a>
   <div class="postmeta">
     <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>Jul 21, 2023
+  <i class="fa fa-calendar-alt"></i>
+  Jul 21, 2023
   
 </span>
   </div>
   <div class="post-entry">
     
-      <p>Today, we will evaluate the integral $$ \int_{-\infty}^{\infty} \frac{\cos(x)}{x^2+1} dx $$ using Cauchy&rsquo;s Residue Theorem and contour integration. This is one of the most beautiful results in all of calculus, and the solution is rather elegant. To begin, let us define the following function in \(\mathbb{C}\): $$ f(z)=\frac{e^{iz}}{z^2+1} $$ and let us use the canonical contour, that is, the top half of a semicircle in the complex plane. Let us define this contour as \(C\), with radius \(R\).</p>
-        <a href="https://drummond.nyc/post/cosint/" class="post-read-more">Read More</a>
+      <p><p>Today, we will evaluate the integral
+$$
+\int_{-\infty}^{\infty} \frac{\cos(x)}{x^2+1} dx
+$$
+using Cauchy&rsquo;s Residue Theorem and contour integration. This is one of the most beautiful results in all of calculus, and the solution is rather elegant. To begin, let us define the following function in
+
+\(\mathbb{C}\)
+:
+$$
+f(z)=\frac{e^{iz}}{z^2+1}
+$$
+and let us use the canonical contour, that is, the top half of a semicircle in the complex plane. Let us define this contour as
+
+\(C\)
+
+, with radius
+
+\(R\)
+. Note that
+
+\(f(z)\)
+
+had two singularities, one at
+
+\(z=-i\)
+
+and the other at
+
+\(z=i\)
+.
+Only
+
+\(z=i\)
+
+is inside of our contour
+
+\(C\)
+, as seen below:</p></p>
+        <a href="http://localhost:1313/post/cosint/" class="post-read-more">Read More</a>
     
   </div>
 </article>
       
         <article class="post-preview">
-  <a href="https://drummond.nyc/post/dirichlet/">
+  <a href="http://localhost:1313/post/dirichlet/">
       <h2 class="post-title">Dirichlet Integral - Two Ways</h2>
   </a>
   <div class="postmeta">
     <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>Jul 7, 2023
+  <i class="fa fa-calendar-alt"></i>
+  Jul 7, 2023
   
 </span>
   </div>
   <div class="post-entry">
     
-      <p>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as $$ \int_{0}^{\infty} \frac{\sin(x)}{x} dx $$
-Feynman Integration We employ Feynman&rsquo;s Integration trick here by first defining the function $$ I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx $$
-and notice that because \(|\frac{\sin(x)}{x}| \leq 1 \)$$ \lim_{\alpha \rightarrow \infty} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha} $$
-so \(I(\alpha) \)vanishes as \(\alpha \rightarrow \infty \)and thus we can continue with Fenyman&rsquo;s technique: $$ \frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx $$ now by integration by parts, we have that $$ -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx $$</p>
-        <a href="https://drummond.nyc/post/dirichlet/" class="post-read-more">Read More</a>
+      <p><p>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as
+$$
+\int_{0}^{\infty} \frac{\sin(x)}{x} dx
+$$</p>
+<h3 id="feynman-integration">Feynman Integration</h3>
+<p>We employ Feynman&rsquo;s Integration trick here by first defining the function
+$$
+I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx
+$$</p>
+<p>and notice that because
+
+\(|\frac{\sin(x)}{x}| \leq 1 \)
+</p>
+<p>$$
+\lim_{\alpha \rightarrow \infty} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha}
+$$</p>
+<p>so
+
+\(I(\alpha) \)
+
+vanishes as
+
+\(\alpha \rightarrow \infty \)
+
+and thus we can continue with Fenyman&rsquo;s technique:
+$$
+\frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx
+$$
+now by integration by parts, we have that
+$$
+-\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx
+$$</p></p>
+        <a href="http://localhost:1313/post/dirichlet/" class="post-read-more">Read More</a>
     
   </div>
 </article>
       
         <article class="post-preview">
-  <a href="https://drummond.nyc/post/7-2-int/">
+  <a href="http://localhost:1313/post/7-2-int/">
       <h2 class="post-title">Integral of the Day - 7/2/2023</h2>
   </a>
   <div class="postmeta">
     <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>Jul 2, 2023
+  <i class="fa fa-calendar-alt"></i>
+  Jul 2, 2023
   
 </span>
   </div>
   <div class="post-entry">
     
-      <p>Today, we will be evaluating the integral $$ \int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R} $$ The restriction of \(a\)to \(\mathbb{R^{-}}\)is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely, \(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\). To do this, we complete the square on \(f(x)=ax^2+bx+c\): $$ y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x $$ Further, $$ \frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2} $$ Lastly, $$ y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c $$ Thus we have that $$ I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx $$ Given that this integrand spans all of \(\mathbb{R}\)we can employ the substitution \(t=x+\frac{b}{2a}\)and our bounds will remain the same.</p>
-        <a href="https://drummond.nyc/post/7-2-int/" class="post-read-more">Read More</a>
+      <p><p>Today, we will be evaluating the integral
+$$
+\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R}
+$$
+The restriction of
+
+\(a\)
+
+to
+
+\(\mathbb{R^{-}}\)
+
+is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely,
+
+\(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\)
+
+. To do this, we complete the square on
+
+\(f(x)=ax^2+bx+c\)
+
+:
+$$
+y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x
+$$
+Further,
+$$
+\frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2}
+$$
+Lastly,
+$$
+y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c
+$$
+Thus we have that
+$$
+I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx
+$$
+Given that this integrand spans all of
+
+\(\mathbb{R}\)
+
+we can employ the substitution
+
+\(t=x+\frac{b}{2a}\)
+
+and our bounds will remain the same. Thus,
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{at^2} dt
+$$
+and since
+
+\(a\)
+
+is negative, we can write
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{-(\sqrt{-a}t)^2} dt
+$$
+Now letting
+
+\(v=\sqrt{-a}t\)
+
+we have that
+
+\(dv=\sqrt{-a} dt \implies \frac{dv}{\sqrt{-a}}=dt\)
+
+and thus
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{-(v)^2} \frac{dv}{\sqrt{-a}} \implies I=\frac{e^{-\frac{b^2}{4a}+c}}{\sqrt{-a}} \sqrt{\pi} = e^{-\frac{b^2}{4a}+c} \sqrt{-\frac{\pi}{a}}
+$$
+and we&rsquo;re done.</p></p>
+        <a href="http://localhost:1313/post/7-2-int/" class="post-read-more">Read More</a>
     
   </div>
 </article>
@@ -116,7 +252,7 @@ so \(I(\alpha) \)vanishes as \(\alpha \rightarrow \infty \)and thus we can con
       
       
         <li class="next">
-          <a href="https://drummond.nyc/post/page/2/">Older &rarr;</a>
+          <a href="http://localhost:1313/post/page/2/">Older &rarr;</a>
         </li>
       
     </ul>
@@ -131,7 +267,7 @@ so \(I(\alpha) \)vanishes as \(\alpha \rightarrow \infty \)and thus we can con
       <a href="/tags/calculus">Calculus</a> -
       <a href="/tags/geometry">Geometry</a>
       <br/>
-      <a href="https://drummond.nyc/about">Owen Drummond</a>
+      <a href="http://localhost:1313/about"></a>
       &copy;
       2023
     </p>
