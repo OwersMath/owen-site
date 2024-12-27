@@ -20,6 +20,9 @@ in an m-dimensional vector space
 {{< math.inline >}}
 \(r_1v_1+r_2v_2+...+r_mv_m=0\)
 {{</ math.inline >}} 
+
+<!--more-->
+
 with the objective of demonstrating that the vectors in
 {{< math.inline >}}
 \((v_1,v_2,...,v_m)\)

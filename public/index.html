@@ -73,6 +73,29 @@
 
       
         <article class="post-preview">
+  <a href="https://drummond.nyc/post/research-statement/">
+      <h2 class="post-title">Research Statement</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Dec 27, 2024
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>My mathematical interests lie in geometric analysis and differential geometry. Specifically, my research is concerned with the analysis of singularities of energy minimizing maps
+and geometric flows. In geometric analysis, the question of the uniqueness of tangent maps
+is notoriously opaque, and is the subject of much modern research. My thesis consists of
+two parts, the first of which focuses on the analysis of harmonic maps following the pioneering work of Leon Simon[1]. Here, I explicate the theory of singularities and tangent maps
+of energy minimizers on Riemannian manifolds.</p></p>
+        <a href="https://drummond.nyc/post/research-statement/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
   <a href="https://drummond.nyc/post/real-analysis-ex/">
       <h2 class="post-title">A Collection of Exercises from Real Analysis II</h2>
   </a>
@@ -166,60 +189,287 @@ is inside of our contour
       <p><p>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as
 $$
 \int_{0}^{\infty} \frac{\sin(x)}{x} dx
-$$</p>
-<h3 id="feynman-integration">Feynman Integration</h3>
-<p>We employ Feynman&rsquo;s Integration trick here by first defining the function
-$$
-I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx
-$$</p>
-<p>and notice that because
-
-\(|\frac{\sin(x)}{x}| \leq 1 \)
-</p>
-<p>$$
-\lim_{\alpha \rightarrow \infty} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha}
-$$</p>
-<p>so
-
-\(I(\alpha) \)
-
-vanishes as
-
-\(\alpha \rightarrow \infty \)
-
-and thus we can continue with Fenyman&rsquo;s technique:
-$$
-\frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx
-$$
-now by integration by parts, we have that
-$$
--\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx
 $$</p></p>
         <a href="https://drummond.nyc/post/dirichlet/" class="post-read-more">Read More</a>
     
   </div>
 </article>
       
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/7-2-int/">
+      <h2 class="post-title">Integral of the Day - 7/2/2023</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Jul 2, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>Today, we will be evaluating the integral
+$$
+\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R}
+$$
+The restriction of
+
+\(a\)
+
+to
+
+\(\mathbb{R^{-}}\)
+
+is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely,
+
+\(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\)
+
+. To do this, we complete the square on
+
+\(f(x)=ax^2+bx+c\)
+
+:
+$$
+y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x
+$$
+Further,
+$$
+\frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2}
+$$
+Lastly,
+$$
+y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c
+$$
+Thus we have that
+$$
+I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx
+$$
+Given that this integrand spans all of
+
+\(\mathbb{R}\)
+
+we can employ the substitution
+
+\(t=x+\frac{b}{2a}\)
+
+and our bounds will remain the same. Thus,
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{at^2} dt
+$$
+and since
+
+\(a\)
+
+is negative, we can write
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{-(\sqrt{-a}t)^2} dt
+$$
+Now letting
+
+\(v=\sqrt{-a}t\)
+
+we have that
+
+\(dv=\sqrt{-a} dt \implies \frac{dv}{\sqrt{-a}}=dt\)
+
+and thus
+$$
+I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{-(v)^2} \frac{dv}{\sqrt{-a}} \implies I=\frac{e^{-\frac{b^2}{4a}+c}}{\sqrt{-a}} \sqrt{\pi} = e^{-\frac{b^2}{4a}+c} \sqrt{-\frac{\pi}{a}}
+$$
+and we&rsquo;re done.</p></p>
+        <a href="https://drummond.nyc/post/7-2-int/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/invrt-proof/">
+      <h2 class="post-title">The Space of Invertible Matricies is Dense in the Space of All Matricies</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  May 27, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>To prove that the space of all invetible matricies is dense in the space of all matricies, it will suffice to show that the space of all invertible matricies is dense the space of matricies with distinct eigenvalues, as the space of matricies with distinct eigenvalues is dense in the space of all matricies. Denote
+ \(E(n, \mathbb{R}) \) 
+as the space of matricies with n distinct eigenvalues.</p></p>
+        <a href="https://drummond.nyc/post/invrt-proof/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/first-fundamental-form/">
+      <h2 class="post-title">First Fundamental Form</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  May 4, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>In this article, we will examine the nature and utility of the first fundamental form, a quadratic form on a surface. Given a curve parametrized by
+
+\(u=u(t)\)
+
+and
+
+\(v=v(t)\)
+
+which lies on a surface
+
+\(X\)
+
+parametrized by
+
+\(X=X(u,v)\)
+
+we have that</p>
+<p>$$
+ds = |\frac{dX}{dt}| dt = |X_u \frac{du}{dt} + X_v \frac{dv}{dt}| dt = \sqrt{(X_u \dot{u} + X_v \dot{v}) \cdot (X_u \dot{u} + X_v \dot{v})}
+$$</p>
+<p>Now defining the coefficients, called the First Fundamental Form coefficients E, F and G, we have</p></p>
+        <a href="https://drummond.nyc/post/first-fundamental-form/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/evaluating-the-gaussian-integral/">
+      <h2 class="post-title">Evaluating the Gaussian Integral</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Apr 25, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>The Gaussian Integral is given by
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx
+$$
+This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3.</p></p>
+        <a href="https://drummond.nyc/post/evaluating-the-gaussian-integral/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/">
+      <h2 class="post-title">Orthonormal Vectors are Linearly Independent</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Apr 13, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>For a set of orthonormal vectors
+
+\((v_1,v_2,...,v_m)\)
+
+in an m-dimensional vector space
+, and set of constants
+
+\(r_1,r_2,...r_m \in \mathbb{R}\)
+
+, if we consider the equation
+
+\(r_1v_1+r_2v_2+...+r_mv_m=0\)
+</p></p>
+        <a href="https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/a-fascinating-integral/">
+      <h2 class="post-title">A Fascinating Integral</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Apr 10, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>We will evalute the integral
+
+\(\int_0^1 \frac{\ln(x)}{1+x} dx \)
+
+using Taylor Series expansion and switching the order of integration and summation.</p>
+<p>Firstly, we notice that
+$$
+\frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n
+$$</p>
+<p>by taylor series expansion. This series coverges for
+
+\(x \in (0,1)\)
+</p>
+<p>so we can substitute this into the integral:</p>
+<p>$$
+\int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx
+$$</p>
+<p>Further, by changing the order of integration and summation, we have
+$$
+\int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx
+$$</p></p>
+        <a href="https://drummond.nyc/post/a-fascinating-integral/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/basel-problem/">
+      <h2 class="post-title">Basel Problem</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Mar 30, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>The Basel Problem, named after Leonard Euler&rsquo;s hometown of Basel, Switzerland, is the solution to the infinite series
+
+\(\sum_{n=1}^{\infty} \frac{\pi^2}{6}\)
+
+Euler was the first to publish his solution one year after having solved this problem in 1734. Since Euler&rsquo;s solution, many alternative proofs have been offered, using complex analysis, symmetric polynomials, and so on. These alternative proofs are more rigorous than Euler&rsquo;s liberal use of infinite polyomial tails, but Euler&rsquo;s solution is perhaps the most elegant. This is the outline of the proof.</p></p>
+        <a href="https://drummond.nyc/post/basel-problem/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
       </div>
     
-    <ul class="pager">
-      
-      
-        <li class="next">
-          <a href="https://drummond.nyc/page/2/">Older &rarr;</a>
-        </li>
-      
-    </ul>
-  
 </div>
 
         </div><footer>
   <div class="container">
     <p class="credits copyright theme-by">
-	<a href="/">Home</a> -
-  <a href="https://arxiv.org/search/?searchtype=author&query=Drummond%2C+O">ArXiv</a> -
+      <a href="/">Home</a> -
+      <a href="https://arxiv.org/search/?searchtype=author&query=Drummond%2C+O">ArXiv</a> -
       <a href="/tags/calculus">Calculus</a> -
-      <a href="/tags/geometry">Geometry</a>
+      <a href="/tags/geometry">Geometry</a> -
+      <a href="/about">About</a>
       <br/>
       <a href="https://drummond.nyc/about"></a>
       &copy;

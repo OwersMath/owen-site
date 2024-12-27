@@ -7,7 +7,7 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
 [pagination]
-  pagerSize = 3
+  pagerSize = 100
 
 [Params.author]
   name = "Owen Drummond"

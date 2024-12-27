@@ -12,6 +12,8 @@ $$
 \int_{0}^{\infty} \frac{\sin(x)}{x} dx
 $$
 
+<!--more-->
+
 ### Feynman Integration
 
 We employ Feynman's Integration trick here by first defining the function

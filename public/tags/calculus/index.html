@@ -125,34 +125,6 @@ is inside of our contour
       <p><p>Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as
 $$
 \int_{0}^{\infty} \frac{\sin(x)}{x} dx
-$$</p>
-<h3 id="feynman-integration">Feynman Integration</h3>
-<p>We employ Feynman&rsquo;s Integration trick here by first defining the function
-$$
-I(\alpha)=\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx
-$$</p>
-<p>and notice that because
-
-\(|\frac{\sin(x)}{x}| \leq 1 \)
-</p>
-<p>$$
-\lim_{\alpha \rightarrow \infty} |\int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx| \leq \int_{0}^{\infty} e^{-\alpha x} dx = \frac{1}{\alpha}
-$$</p>
-<p>so
-
-\(I(\alpha) \)
-
-vanishes as
-
-\(\alpha \rightarrow \infty \)
-
-and thus we can continue with Fenyman&rsquo;s technique:
-$$
-\frac{\partial I(\alpha)}{\partial \alpha} = \frac{\partial}{\partial \alpha} \int_{0}^{\infty} \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} x \frac{\sin(x)}{x} e^{-\alpha x} dx = -\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx
-$$
-now by integration by parts, we have that
-$$
--\int_{0}^{\infty} \sin(x) e^{-\alpha x} dx = -1+\alpha \int_{0}^{\infty} \cos(x) e^{-\alpha x} dx
 $$</p></p>
         <a href="https://drummond.nyc/post/dirichlet/" class="post-read-more">Read More</a>
     
@@ -246,26 +218,80 @@ and we&rsquo;re done.</p></p>
   </div>
 </article>
       
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/evaluating-the-gaussian-integral/">
+      <h2 class="post-title">Evaluating the Gaussian Integral</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Apr 25, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>The Gaussian Integral is given by
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx
+$$
+This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3.</p></p>
+        <a href="https://drummond.nyc/post/evaluating-the-gaussian-integral/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
+        <article class="post-preview">
+  <a href="https://drummond.nyc/post/a-fascinating-integral/">
+      <h2 class="post-title">A Fascinating Integral</h2>
+  </a>
+  <div class="postmeta">
+    <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Apr 10, 2023
+  
+</span>
+  </div>
+  <div class="post-entry">
+    
+      <p><p>We will evalute the integral
+
+\(\int_0^1 \frac{\ln(x)}{1+x} dx \)
+
+using Taylor Series expansion and switching the order of integration and summation.</p>
+<p>Firstly, we notice that
+$$
+\frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n
+$$</p>
+<p>by taylor series expansion. This series coverges for
+
+\(x \in (0,1)\)
+</p>
+<p>so we can substitute this into the integral:</p>
+<p>$$
+\int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx
+$$</p>
+<p>Further, by changing the order of integration and summation, we have
+$$
+\int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx
+$$</p></p>
+        <a href="https://drummond.nyc/post/a-fascinating-integral/" class="post-read-more">Read More</a>
+    
+  </div>
+</article>
+      
       </div>
     
-    <ul class="pager">
-      
-      
-        <li class="next">
-          <a href="https://drummond.nyc/tags/calculus/page/2/">Older &rarr;</a>
-        </li>
-      
-    </ul>
-  
 </div>
 
         </div><footer>
   <div class="container">
     <p class="credits copyright theme-by">
-	<a href="/">Home</a> -
-  <a href="https://arxiv.org/search/?searchtype=author&query=Drummond%2C+O">ArXiv</a> -
+      <a href="/">Home</a> -
+      <a href="https://arxiv.org/search/?searchtype=author&query=Drummond%2C+O">ArXiv</a> -
       <a href="/tags/calculus">Calculus</a> -
-      <a href="/tags/geometry">Geometry</a>
+      <a href="/tags/geometry">Geometry</a> -
+      <a href="/about">About</a>
       <br/>
       <a href="https://drummond.nyc/about"></a>
       &copy;

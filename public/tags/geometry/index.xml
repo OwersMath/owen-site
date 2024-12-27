@@ -20,7 +20,7 @@
       <link>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://drummond.nyc/post/orthonormal-vectors-are-linearly-independent/</guid>
-      <description>&lt;p&gt;For a set of orthonormal vectors&#xA;&#xD;&#xA;\((v_1,v_2,...,v_m)\)&#xD;&#xA;&#xA;in an m-dimensional vector space&#xA;, and set of constants&#xA;&#xD;&#xA;\(r_1,r_2,...r_m \in \mathbb{R}\)&#xD;&#xA;&#xA;, if we consider the equation&#xA;&#xD;&#xA;\(r_1v_1+r_2v_2+...+r_mv_m=0\)&#xD;&#xA;&#xA;with the objective of demonstrating that the vectors in&#xA;&#xD;&#xA;\((v_1,v_2,...,v_m)\)&#xD;&#xA;&#xA;are linearly independent, then we must show that&#xA;&#xD;&#xA;\(r_1=r_2=...=r_m=0\)&#xD;&#xA;. If we take the inner product on both sides of the equation , we have that&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;&amp;lt;r_1v_1+r_2v_2+&amp;hellip;+r_mv_m, v_1&amp;gt; = &amp;lt;0,v_1&amp;gt;&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Using the properties of inner products, we have that&lt;/p&gt;</description>
+      <description>&lt;p&gt;For a set of orthonormal vectors&#xA;&#xD;&#xA;\((v_1,v_2,...,v_m)\)&#xD;&#xA;&#xA;in an m-dimensional vector space&#xA;, and set of constants&#xA;&#xD;&#xA;\(r_1,r_2,...r_m \in \mathbb{R}\)&#xD;&#xA;&#xA;, if we consider the equation&#xA;&#xD;&#xA;\(r_1v_1+r_2v_2+...+r_mv_m=0\)&#xD;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

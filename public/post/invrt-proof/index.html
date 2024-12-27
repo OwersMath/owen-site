@@ -58,9 +58,10 @@
       
     <p>To prove that the space of all invetible matricies is dense in the space of all matricies, it will suffice to show that the space of all invertible matricies is dense the space of matricies with distinct eigenvalues, as the space of matricies with distinct eigenvalues is dense in the space of all matricies. Denote
  \(E(n, \mathbb{R}) \) 
-as the space of matricies with n distinct eigenvalues. Formally,
+as the space of matricies with n distinct eigenvalues.</p>
+<p>Formally,
 $$
-E(n, ℝ) = { \begin{bmatrix}
+E(n, \mathbb R) = { \begin{bmatrix}
 a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
 a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
 \vdots &amp; \vdots &amp; \ddots &amp; \vdots    \\
@@ -85,10 +86,12 @@ D^m = \begin{bmatrix}
 $$
 and  \(A^m=UD^{m}U^{*} \) . Because  \(A^m \)  is constructed in such a way that  \(\alpha_{1}^{m}, ..., \alpha_{n}^{m} \)  are the eigenvalues of  \(A^m \) ,  \(A^m \)  has n distinct non-zero eigenvalues, and thus  \(A^m \)  is invertible. Finally,
 $$
-A-A^m=UDU^{\ast}-UD^{m}U^{\ast}=U(D-D^{m})U^{\ast} \implies ||A-A^m|| \leq ||U|| \hspace{0.12cm} ||D-D^m|| \hspace{0.12cm} ||U^{\ast}|| = ||D-D^{m}|| \rightarrow 0 \hspace{0.25cm} \textnormal{as} \hspace{0.25cm} m \rightarrow \infty
+\begin{align}
+&amp;A-A^m=UDU^{\ast}-UD^{m}U^{\ast}=U(D-D^{m})U^{\ast} \\\
+\implies ||&amp;A-A^m|| \leq ||U|| \hspace{0.12cm} ||D-D^m|| \hspace{0.12cm} ||U^{\ast}|| = ||D-D^{m}|| \rightarrow 0 \hspace{0.25cm} \textnormal{as} \hspace{0.25cm} m \rightarrow \infty
+\end{align}
 $$
 Thus, the spaces of all  \(n \times n \)  invertible matricies is dense in  \(E(n, \mathbb{R}) \) , which suffices to show that the space of all  \(n \times n \)  matricies is dense in   \(M(n, \mathbb{R}) \) , the space of all  \(n \times n \)  matricies since  \(E(n, \mathbb{R}) \)  is dense in  \(M(n, \mathbb{R}) \) .</p>
-
 
 
       
@@ -99,10 +102,11 @@ Thus, the spaces of all  \(n \times n \)  invertible matricies is dense in  \(E(
         </div><footer>
   <div class="container">
     <p class="credits copyright theme-by">
-	<a href="/">Home</a> -
-  <a href="https://arxiv.org/search/?searchtype=author&query=Drummond%2C+O">ArXiv</a> -
+      <a href="/">Home</a> -
+      <a href="https://arxiv.org/search/?searchtype=author&query=Drummond%2C+O">ArXiv</a> -
       <a href="/tags/calculus">Calculus</a> -
-      <a href="/tags/geometry">Geometry</a>
+      <a href="/tags/geometry">Geometry</a> -
+      <a href="/about">About</a>
       <br/>
       <a href="https://drummond.nyc/about"></a>
       &copy;

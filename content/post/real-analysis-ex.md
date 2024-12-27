@@ -14,4 +14,4 @@ distributions, and probability theory.
 
 <!--more-->
 
-<meta http-equiv="refresh" content="0; url=/MATH502Exercises.pdf" />
+<meta http-equiv="refresh" content="0; url=/pdf/502-ex.pdf" />

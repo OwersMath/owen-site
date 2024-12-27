@@ -9,9 +9,11 @@ math: true
 
 To prove that the space of all invetible matricies is dense in the space of all matricies, it will suffice to show that the space of all invertible matricies is dense the space of matricies with distinct eigenvalues, as the space of matricies with distinct eigenvalues is dense in the space of all matricies. Denote 
 {{< math.inline >}} \(E(n, \mathbb{R}) \) {{</ math.inline >}}
- as the space of matricies with n distinct eigenvalues. Formally,
+ as the space of matricies with n distinct eigenvalues. 
+ <!--more-->
+ Formally,
 $$
-E(n, ℝ) = \{ \begin{bmatrix}
+E(n, \mathbb R) = \{ \begin{bmatrix}
 a_{11} & a_{12} & \cdots & a_{1n} \\\
 a_{21} & a_{22} & \cdots & a_{2n} \\\
 \vdots & \vdots & \ddots & \vdots    \\\
@@ -36,6 +38,9 @@ D^m = \begin{bmatrix}
 $$
 and {{< math.inline >}} \(A^m=UD^{m}U^{*} \) {{</ math.inline >}}. Because {{< math.inline >}} \(A^m \) {{</ math.inline >}} is constructed in such a way that {{< math.inline >}} \(\alpha_{1}^{m}, ..., \alpha_{n}^{m} \) {{</ math.inline >}} are the eigenvalues of {{< math.inline >}} \(A^m \) {{</ math.inline >}}, {{< math.inline >}} \(A^m \) {{</ math.inline >}} has n distinct non-zero eigenvalues, and thus {{< math.inline >}} \(A^m \) {{</ math.inline >}} is invertible. Finally, 
 $$
-A-A^m=UDU^{\ast}-UD^{m}U^{\ast}=U(D-D^{m})U^{\ast} \implies ||A-A^m|| \leq ||U|| \hspace{0.12cm} ||D-D^m|| \hspace{0.12cm} ||U^{\ast}|| = ||D-D^{m}|| \rightarrow 0 \hspace{0.25cm} \textnormal{as} \hspace{0.25cm} m \rightarrow \infty
+\begin{align}
+&A-A^m=UDU^{\ast}-UD^{m}U^{\ast}=U(D-D^{m})U^{\ast} \\\\\\
+\implies ||&A-A^m|| \leq ||U|| \hspace{0.12cm} ||D-D^m|| \hspace{0.12cm} ||U^{\ast}|| = ||D-D^{m}|| \rightarrow 0 \hspace{0.25cm} \textnormal{as} \hspace{0.25cm} m \rightarrow \infty
+\end{align}
 $$
 Thus, the spaces of all {{< math.inline >}} \(n \times n \) {{</ math.inline >}} invertible matricies is dense in {{< math.inline >}} \(E(n, \mathbb{R}) \) {{</ math.inline >}}, which suffices to show that the space of all {{< math.inline >}} \(n \times n \) {{</ math.inline >}} matricies is dense in  {{< math.inline >}} \(M(n, \mathbb{R}) \) {{</ math.inline >}}, the space of all {{< math.inline >}} \(n \times n \) {{</ math.inline >}} matricies since {{< math.inline >}} \(E(n, \mathbb{R}) \) {{</ math.inline >}} is dense in {{< math.inline >}} \(M(n, \mathbb{R}) \) {{</ math.inline >}}.
