@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Calculus on Owen&#39;s Math Portal</title>
-    <link>https://drummond.nyc/tags/calculus/</link>
+    <link>http://localhost:1313/tags/calculus/</link>
     <description>Recent content in Calculus on Owen&#39;s Math Portal</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://drummond.nyc/tags/calculus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/calculus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Most Beautiful Result in Calculus</title>
-      <link>https://drummond.nyc/post/cosint/</link>
+      <link>http://localhost:1313/post/cosint/</link>
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://drummond.nyc/post/cosint/</guid>
+      <guid>http://localhost:1313/post/cosint/</guid>
       <description>&lt;p&gt;Today, we will evaluate the integral&#xA;$$&#xA;\int_{-\infty}^{\infty} \frac{\cos(x)}{x^2+1} dx&#xA;$$&#xA;using Cauchy&amp;rsquo;s Residue Theorem and contour integration. This is one of the most beautiful results in all of calculus, and the solution is rather elegant. To begin, let us define the following function in&#xA;&#xD;&#xA;\(\mathbb{C}\)&#xD;&#xA;:&#xA;$$&#xA;f(z)=\frac{e^{iz}}{z^2+1}&#xA;$$&#xA;and let us use the canonical contour, that is, the top half of a semicircle in the complex plane. Let us define this contour as&#xA;&#xD;&#xA;\(C\)&#xD;&#xA;&#xA;, with radius&#xA;&#xD;&#xA;\(R\)&#xD;&#xA;. Note that&#xA;&#xD;&#xA;\(f(z)\)&#xD;&#xA;&#xA;had two singularities, one at&#xA;&#xD;&#xA;\(z=-i\)&#xD;&#xA;&#xA;and the other at&#xA;&#xD;&#xA;\(z=i\)&#xD;&#xA;.&#xA;Only&#xA;&#xD;&#xA;\(z=i\)&#xD;&#xA;&#xA;is inside of our contour&#xA;&#xD;&#xA;\(C\)&#xD;&#xA;, as seen below:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dirichlet Integral - Two Ways</title>
-      <link>https://drummond.nyc/post/dirichlet/</link>
+      <link>http://localhost:1313/post/dirichlet/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://drummond.nyc/post/dirichlet/</guid>
+      <guid>http://localhost:1313/post/dirichlet/</guid>
       <description>&lt;p&gt;Here we will solve the Dirichlet Integral using two different techniques. The Dirichlet Integral is defined as&#xA;$$&#xA;\int_{0}^{\infty} \frac{\sin(x)}{x} dx&#xA;$$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Integral of the Day - 7/2/2023</title>
-      <link>https://drummond.nyc/post/7-2-int/</link>
+      <link>http://localhost:1313/post/7-2-int/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://drummond.nyc/post/7-2-int/</guid>
+      <guid>http://localhost:1313/post/7-2-int/</guid>
       <description>&lt;p&gt;Today, we will be evaluating the integral&#xA;$$&#xA;\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx \hspace{1cm} a \in \mathbb{R^{-}}, b \in \mathbb{R}, c \in \mathbb{R}&#xA;$$&#xA;The restriction of&#xA;&#xD;&#xA;\(a\)&#xD;&#xA;&#xA;to&#xA;&#xD;&#xA;\(\mathbb{R^{-}}\)&#xD;&#xA;&#xA;is required for the convergence of this integral. My thought process for this integral was initially to minipulate the integrand in such a way that we can employ the result of the Gaussian integral, namely,&#xA;&#xD;&#xA;\(\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\)&#xD;&#xA;&#xA;. To do this, we complete the square on&#xA;&#xD;&#xA;\(f(x)=ax^2+bx+c\)&#xD;&#xA;&#xA;:&#xA;$$&#xA;y=ax^2+bx+c \implies y-c=ax^2+bx=a(x^2+\frac{b}{a}x) \implies \frac{y-c}{a}=x^2+\frac{b}{a}x&#xA;$$&#xA;Further,&#xA;$$&#xA;\frac{y-c}{a}+\frac{b^2}{4a^2}=x^2+\frac{b}{a}x+\frac{b^2}{4a^2} \implies \frac{y-c}{a}=(x+\frac{b}{2a})^2-\frac{b^2}{4a^2}&#xA;$$&#xA;Lastly,&#xA;$$&#xA;y=a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c&#xA;$$&#xA;Thus we have that&#xA;$$&#xA;I=\int_{-\infty}^{\infty} e^{ax^2+bx+c} dx=\int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c} dx=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{a(x+\frac{b}{2a})^2} dx&#xA;$$&#xA;Given that this integrand spans all of&#xA;&#xD;&#xA;\(\mathbb{R}\)&#xD;&#xA;&#xA;we can employ the substitution&#xA;&#xD;&#xA;\(t=x+\frac{b}{2a}\)&#xD;&#xA;&#xA;and our bounds will remain the same. Thus,&#xA;$$&#xA;I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{at^2} dt&#xA;$$&#xA;and since&#xA;&#xD;&#xA;\(a\)&#xD;&#xA;&#xA;is negative, we can write&#xA;$$&#xA;I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{-(\sqrt{-a}t)^2} dt&#xA;$$&#xA;Now letting&#xA;&#xD;&#xA;\(v=\sqrt{-a}t\)&#xD;&#xA;&#xA;we have that&#xA;&#xD;&#xA;\(dv=\sqrt{-a} dt \implies \frac{dv}{\sqrt{-a}}=dt\)&#xD;&#xA;&#xA;and thus&#xA;$$&#xA;I=e^{-\frac{b^2}{4a}+c} \int_{-\infty}^{\infty} e^{-(v)^2} \frac{dv}{\sqrt{-a}} \implies I=\frac{e^{-\frac{b^2}{4a}+c}}{\sqrt{-a}} \sqrt{\pi} = e^{-\frac{b^2}{4a}+c} \sqrt{-\frac{\pi}{a}}&#xA;$$&#xA;and we&amp;rsquo;re done.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Evaluating the Gaussian Integral</title>
-      <link>https://drummond.nyc/post/evaluating-the-gaussian-integral/</link>
+      <link>http://localhost:1313/post/evaluating-the-gaussian-integral/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://drummond.nyc/post/evaluating-the-gaussian-integral/</guid>
+      <guid>http://localhost:1313/post/evaluating-the-gaussian-integral/</guid>
       <description>&lt;p&gt;The Gaussian Integral is given by&#xA;$$&#xA;\int_{-\infty}^{\infty} e^{-x^2} dx&#xA;$$&#xA;This is a beautiful integral with many important applications to probability and statistics, namely normal distributions. Here, we will evaluate this integral using techniques from Calculus 3.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Fascinating Integral</title>
-      <link>https://drummond.nyc/post/a-fascinating-integral/</link>
+      <link>http://localhost:1313/post/a-fascinating-integral/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://drummond.nyc/post/a-fascinating-integral/</guid>
+      <guid>http://localhost:1313/post/a-fascinating-integral/</guid>
       <description>&lt;p&gt;We will evalute the integral&#xA;&#xD;&#xA;\(\int_0^1 \frac{\ln(x)}{1+x} dx \)&#xD;&#xA;&#xA;using Taylor Series expansion and switching the order of integration and summation.&lt;/p&gt;&#xA;&lt;p&gt;Firstly, we notice that&#xA;$$&#xA;\frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;by taylor series expansion. This series coverges for&#xA;&#xD;&#xA;\(x \in (0,1)\)&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;so we can substitute this into the integral:&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;\int_0^1 \frac{\ln(x)}{1+x} dx = \int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Further, by changing the order of integration and summation, we have&#xA;$$&#xA;\int_0^1 \ln(x) \sum_{n=0}^{\infty} (-1)^n x^n dx = \sum_{n=0}^{\infty} (-1)^n \int_0^1 x^n \ln(x) dx&#xA;$$&lt;/p&gt;</description>
     </item>
   </channel>
