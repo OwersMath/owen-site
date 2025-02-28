@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Owen&#39;s Math Portal</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://drummond.nyc/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Collection of Exercises in Minimal Surfaces</title>
+      <link>https://drummond.nyc/post/ms_exercises/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://drummond.nyc/post/ms_exercises/</guid>
+      <description>&lt;p&gt;These are a collection of exercises in minimal surfaces, most of which are taken from &amp;ldquo;A Course in Minimal Surfaces&amp;rdquo; by Colding and Minicozzi. I am still adding to this document, so please feel free to contact me if you find any errors.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Curvature, Stability, and Scalar Rigidity in Minimal Surface Theory</title>
       <link>https://drummond.nyc/post/grad-talk/</link>
