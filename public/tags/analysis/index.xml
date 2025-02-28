@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analysis on Owen&#39;s Math Portal</title>
-    <link>http://localhost:1313/tags/analysis/</link>
+    <link>https://drummond.nyc/tags/analysis/</link>
     <description>Recent content in Analysis on Owen&#39;s Math Portal</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://drummond.nyc/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Collection of Exercises in Minimal Surfaces</title>
-      <link>http://localhost:1313/post/ms_exercises/</link>
+      <link>https://drummond.nyc/post/ms_exercises/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/ms_exercises/</guid>
+      <guid>https://drummond.nyc/post/ms_exercises/</guid>
       <description>&lt;p&gt;These are a collection of exercises in minimal surfaces, most of which are taken from &amp;ldquo;A Course in Minimal Surfaces&amp;rdquo; by Colding and Minicozzi. I am still adding to this document, so please feel free to contact me if you find any errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Monotonicity Formula for Energy Minimizing Maps and Monotone Quantities</title>
-      <link>http://localhost:1313/post/monotonicity-emm/</link>
+      <link>https://drummond.nyc/post/monotonicity_emm/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/monotonicity-emm/</guid>
+      <guid>https://drummond.nyc/post/monotonicity_emm/</guid>
       <description>&lt;p&gt;Detailed proof of the monotonicity formula for energy minimizing maps and a discussion of the density function and monotone quanities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Curvature, Stability, and Scalar Rigidity in Minimal Surface Theory</title>
-      <link>http://localhost:1313/post/grad-talk/</link>
+      <link>https://drummond.nyc/post/grad-talk/</link>
       <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/grad-talk/</guid>
+      <guid>https://drummond.nyc/post/grad-talk/</guid>
       <description>&lt;p&gt;This is the outline for a talk delivered on Feburary 21st, 2025 at the Rutgers student operated Grad Analysis Seminar.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hardy Spaces are Banach Spaces</title>
-      <link>http://localhost:1313/post/hardy-spaces/</link>
+      <link>https://drummond.nyc/post/hardy-spaces/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/hardy-spaces/</guid>
+      <guid>https://drummond.nyc/post/hardy-spaces/</guid>
       <description>&lt;p&gt;The following is a short presentation on Hardy Spaces for MATH507 - Functional Analysis with Professor Maxime Van de Moortel. The presentation includes a brief introduction to H^p spaces and a proof that H^p is a Banach space for all p from 1 to infinity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Collection of Exercises from Real Analysis II</title>
-      <link>http://localhost:1313/post/real-analysis-ex/</link>
+      <link>https://drummond.nyc/post/real-analysis-ex/</link>
       <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/real-analysis-ex/</guid>
+      <guid>https://drummond.nyc/post/real-analysis-ex/</guid>
       <description>&lt;p&gt;The following exercises are an assortment of homework problems from &lt;em&gt;MATH 502 - Theory&#xA;of Functions of a Real Variable II&lt;/em&gt; with Professor Dennis Kriventsov at Rutgers University.&#xA;Topics include Radon Measures, weak convergence, Haar measures, Fourier analysis, PDEs,&#xA;distributions, and probability theory.&lt;/p&gt;</description>
     </item>
   </channel>
