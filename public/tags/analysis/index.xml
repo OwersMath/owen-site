@@ -6,21 +6,21 @@
     <description>Recent content in Analysis on Owen&#39;s Math Portal</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://drummond.nyc/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Monotonicity Formula for Energy Minimizing Maps and Monotone Quantities</title>
+      <link>https://drummond.nyc/post/monotonicity_emm/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://drummond.nyc/post/monotonicity_emm/</guid>
+      <description>&lt;p&gt;This is an outline for the Rutgers Grad Analysis seminar talk that I delivered on 4/25/2025.&lt;/p&gt;&#xA;&lt;p&gt;Abstract: In this talk, we will define energy minimizing maps and introduce key examples. Then, we will derive the associated variational formulae. A central theme of the talk will be the monotonicity formula: we will explore its significance and highlight its appearance in related geometric contexts such as minimal surfaces, mean curvature flow, and Ricci flow. We will then prove the monotonicity formula for energy minimizing maps. Finally, we will define the density function, introduce tangent maps, and discuss the role of monotone quantities in the study of regularity and singularities.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Collection of Exercises in Minimal Surfaces</title>
       <link>https://drummond.nyc/post/ms_exercises/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://drummond.nyc/post/ms_exercises/</guid>
       <description>&lt;p&gt;These are a collection of exercises in minimal surfaces, most of which are taken from &amp;ldquo;A Course in Minimal Surfaces&amp;rdquo; by Colding and Minicozzi. I am still adding to this document, so please feel free to contact me if you find any errors.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Monotonicity Formula for Energy Minimizing Maps and Monotone Quantities</title>
-      <link>https://drummond.nyc/post/monotonicity_emm/</link>
-      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://drummond.nyc/post/monotonicity_emm/</guid>
-      <description>&lt;p&gt;Detailed proof of the monotonicity formula for energy minimizing maps and a discussion of the density function and monotone quanities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Curvature, Stability, and Scalar Rigidity in Minimal Surface Theory</title>
