@@ -6,8 +6,15 @@
     <description>Recent content in Analysis on Owen&#39;s Math Portal</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://drummond.nyc/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes on Sobolev Spaces</title>
+      <link>https://drummond.nyc/post/sobolevspaces/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://drummond.nyc/post/sobolevspaces/</guid>
+      <description>&lt;p&gt;These are notes that I have compiled during my self-study for Sobolev Spaces. At the end, I have included several exercises, largely taken from Partial Differential Equations by Lawrence Evans. I am sure there may be errors in here, in which case feel free to email me.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Monotonicity Formula for Energy Minimizing Maps and Monotone Quantities</title>
       <link>https://drummond.nyc/post/monotonicity_emm/</link>
