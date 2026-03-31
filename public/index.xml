@@ -6,8 +6,15 @@
     <description>Recent content on Owen&#39;s Math Portal</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://drummond.nyc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Free Boundary Problem with a Volume Constraint</title>
+      <link>https://drummond.nyc/post/volconstraintfb/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://drummond.nyc/post/volconstraintfb/</guid>
+      <description>&lt;p&gt;These notes were created, in part, for a talk at the Grad Analysis Seminar at Rutgers on March 30th, 2026. I also decided to produce them as part of my reading this semester in preparation to do research on water waves and other problems in shape optimization. The notes are based chiefly on the 1986 paper An Optimization Problem with a Volume Constraint by Alt, Caffarelli, and Aguilera, with frequent references to the landmark 1981 paper Existence and regularity for a minimum problem with free boundary by Alt and Caffarelli.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Notes on Sobolev Spaces</title>
       <link>https://drummond.nyc/post/sobolevspaces/</link>
